@@ -1,0 +1,6 @@
+﻿TestCase_ROWID;Name;Email;Mobile;Subject;Your Message
+1;Dimitar Dimitrov;testcase1;889632698;testcase1;Hi, my name is Dimitar Dimitro
+2;Ivan Ivanov;testcase2@;889632699;testcase2;Hi, my name is Ivan Ivanov
+3;Gergana Slavova;testcase3@testcase3;889632700;testcase3;Hi, my name is Gergana Slavova
+4;Elisaveta Dimitrova;testcase4@testcase4.;889632701;testcase4;Hi, my name is Elisaveta Dimitrova
+5;Radoslava Dimitrova;testcase52testcase5.com;889632702;testcase5;Hi, my name is Radoslava Dimitrova

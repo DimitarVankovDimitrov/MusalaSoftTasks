@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+	<title>TestComplete 15 Log</title>
+	<link rel="stylesheet" type="text/css" href="default.css">
+	<!--[if lte IE 8]><style>.icon { background-position-y: -5px; }</style><![endif]-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+<body onresize="doWindowResize()">
+	<script>
+		var nav = navigator.userAgent.toLowerCase();
+		var isOpera = (window.opera != null);
+		var isFF = (navigator.product == "Gecko");
+		var isIE11 = nav.indexOf("trident/7.0") > 0;
+		var isIE = (!isOpera && (nav.indexOf("msie") >= 0)) || isIE11;
+		var isSupported = (isIE || window.XMLHttpRequest != null);
+		if (isOpera)
+		{
+			if (!isSupported)
+				alert('To view this log you need another browser!');
+		}
+	</script>
+
+	<script src="aqds.js"></script>
+	<script src="caption.js"></script>
+	<script src="text.js"></script>
+	<script src="picture.js"></script>
+	<script src="table.js"></script>
+
+	<div id="logroot"></div>
+
+	<script src="logtree.js"></script>
+</body>
+</html>

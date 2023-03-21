@@ -1,0 +1,1221 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title> Summary Report </title>
+<style>
+@media all {
+  body {
+    font-weight: normal;
+    font-family: Segoe UI, Tahoma;
+    padding: 10px;
+  }
+  td {
+    text-align: left;
+  }
+  a {
+    color: #0000FF;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #3366FF;
+  }
+  a:visited {
+    color: #0000FF;
+  }
+  #GeneralResults_Section {
+    border: 1px solid silver;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+  }
+  #GeneralResults_Img {
+    border: 0;
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+    margin-bottom: -1px;
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+  }
+  .whiteBack {
+    background-color: white !important;
+  }
+  h2 {
+    font-size: 80%;
+    margin: 0px;
+    padding: 4px 0px 5px 12px;
+    font-weight: normal;
+  }
+  h2 a, h2 a:visited {
+    text-decoration: none;
+    color: #666666;
+  }
+  h2 a:hover {
+    color: #444444;
+  }
+  .section table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .section td {
+    border-top: 1px solid #eeeeee;
+    padding: 4px;
+    padding-left: 12px;
+    font-size: 90%;
+  }
+  .testHeader {
+    border-collapse: collapse;
+  }
+  .testHeader h1 {
+    font-size: 120%;
+    font-weight: normal;
+    margin: 0px;
+    margin-bottom: 15px;
+    color: #444444;
+  }
+  .testHeader table {
+    border-collapse: collapse;
+  }
+  .testHeader td {
+    vertical-align: top;
+  }
+  .testHeader table td {
+    padding: 2px;
+    line-height: 23px;
+    color: #666666;
+  }
+  .testHeader .data {
+    font-weight: 600;
+    color: black;
+  }
+  .testHeader .bullet {
+    font-size: 140%;
+    letter-spacing: 2px;
+	padding-left: 25px;
+  }
+  .testHeader .black {
+    color: black;
+  }
+  .failed {
+    color: #ce1126;
+  }
+  .warning {
+    color: #f4d900;
+  }
+  .passed {
+    color: #0eb300;
+  }
+  .unexecuted {
+    color: #8d8d8d;
+  }
+  #logTitleTable {
+    margin: 12px 0 3px 0;
+  }
+  #execDurationTable {
+    margin: 5px 0 0px 0;
+  }
+  .section td.generalCellTitle {
+    width: 18ex;
+  }
+  .section td.generalCellData {
+    width: 22ex;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .section td.generalCellTitle2 {
+    width: 10ex;
+    padding-left: 10ex;
+  }
+  #logStatusTable {
+    margin: 7px 0 0 2px;
+  }
+  #logStatusTable td {
+    padding: 0px;
+  }
+  #logStatusTable.status_0 {
+    display: none;
+    font-size: 80%;
+  }
+  #logStatusTable.status_1 {
+    font-size: 80%;
+    background-color: #fff2de;
+  }
+  #logStatusTable.status_2 {
+    font-size: 80%;
+    background-color: #f8e5e5;
+  }
+  #logStatusTable #logStatusText {
+    color: black;
+    padding-right: 8px;
+  }
+  #logStatusText a {
+    color: #0079c1;
+    font-weight: 600;
+  }
+  #logStatusImage {
+    width: 14px;
+    height: 14px;
+    border: 0px;
+    margin: 5px 4px 0 7px;
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+  }
+  #testListTabs {
+    border-collapse: collapse;
+  }
+  #testListTabs td {
+    padding: 0px;
+    vertical-align: top;
+  }
+  #testListTabs a {
+    white-space: nowrap;
+  }
+  #testList {
+    border: 1px solid #909090;
+    min-width: 620px;
+  }
+  #testList > div.overflow {
+    height: 100%;
+    overflow: auto;
+  }
+  #testList > div.visible {
+    height: 100%;
+    overflow: visible;
+  }
+  #testList table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+  }
+  #testList th {
+    font-size: 75%;
+    font-weight: normal;
+    color: #707070;
+    text-align: left;
+    padding: 3px 5px 3px 5px;
+    background-color: #f5f5f5;
+    cursor: default;
+  }
+  #testList th.sortAsc::after {
+    font-size: 75%;
+    letter-spacing: 3px;
+    content: " \25B2";
+  }
+  #testList th.sortDesc::after {
+    font-size: 75%;
+    letter-spacing: 3px;
+    content: " \25BC";
+  }
+  #testList th.column_hover {
+    background-color: #cce8ff;
+  }
+  #testList tr {
+    min-height: 27px;
+  }
+  #testList td {
+    font-size: 85%;
+    font-weight: normal;
+    border-top: 1px solid #eeeeee;
+    padding: 3px 5px 3px 5px;
+    vertical-align: top;
+  }
+  #testList td.test-status {
+    text-align: center;
+    padding: 5px 5px 1px 10px;
+  }
+  #testList td.test-status img.status {
+    width: 14px;
+    height: 14px;
+    border: 0px;
+    margin: 1px 0px 1px 3px;
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+  }
+  #testList td.test-status img.collapse {
+    width: 9px;
+    height: 9px;
+    border: 0px;
+    margin: 1px 3px 4px 3px;
+    background-size: 9px 9px;
+    background-repeat: no-repeat;
+  }
+  #testList tr.collapsed.children_allowed[data-children] img.attention {
+    width: 10px;
+    height: 10px;
+    border: 0px;
+    margin: 1px 3px 4px 3px;
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMjHxIGmVAAAAnUlEQVQoU2P4//8/GxAbv1q//v8ZB4f/uxkYwBjEfrd//x2gnBpIDUihyZX4+GcwBWj43936+j9ANWkMIJOQJYGawBhZDGjyf4bT9vYYgiCMLAZSw4AsAMLYFIIwhsK7DQ1gjC5OlNUX/P3/Y3jm4YQJYIwsBtIICp4CoC8/I0sgY2DwAJX8rwIpNADiMJAuZGeA2CAxIFj7//9/KQDuHeUAJEfp1gAAAABJRU5ErkJggg==");
+  }
+  span.test-status {
+    text-align: center;
+    padding: 5px 10px 1px 0px;
+  }
+  span.test-status img.status {
+    width: 14px;
+    height: 14px;
+    border: 0px;
+    margin: 1px 0px 1px 3px;
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+  }
+  #testList a {
+    color: #0079c1;
+  }
+  .tab_icon {
+    width: 18px;
+    height: 18px;
+    margin: 7px 1px -4px 12px;
+    border: 0px;
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+  }
+  .bold {
+    font-weight: bold;
+    margin: 2px;
+  }
+  .grayed {
+    color: gray;
+  }
+  .tab_button {
+    border: 1px solid #eeeeee;
+    border-bottom: 0px;
+    margin-right: -1px;
+    height: 36px;
+    padding-top: 5px;
+    padding-right: 16px;
+    position: relative;
+    top: 0px;
+    background-color: white;
+    cursor: pointer;
+    color: black;
+    font-size: 85%;
+  }
+  .tab_button_expanded {
+    height: 46px;
+  }
+  .tab_button_hover {
+    background-color: #cce8ff;
+  }
+  .tab_button_active {
+    background-color: #cce8ff;
+    border: 1px solid #90caff;
+    z-index: 10 !important;
+    cursor: default;
+    margin-bottom: -1px;
+  }
+  .tab_button_disabled {
+    color: gray;
+    cursor: default;
+  }
+  .tab_button_hidden {
+    display: none;
+  }
+  .retries_info {
+    color: #ce1126;
+	font-size: 90%;
+  }
+  .retries_info_hidden {
+    display: none;
+  }
+  .test_list_item_hidden {
+    display: none;
+  }
+  #testListTabs div.tab_button:nth-child(1) {
+    z-index: 6;
+  }
+  #testListTabs div.tab_button:nth-child(2) {
+    z-index: 5;
+    margin-top: -0.5ex;
+  }
+  #testListTabs div.tab_button:nth-child(3) {
+    z-index: 4;
+    margin-top: -0.5ex;
+  }
+  #testListTabs div.tab_button:nth-child(4) {
+    z-index: 3;
+    margin-top: -0.5ex;
+  }
+  #testListTabs div.tab_button:nth-child(5) {
+    z-index: 2;
+    margin-top: -0.5ex;
+  }
+  #testListTabs div.tab_button:nth-child(6) {
+    z-index: 1;
+    margin-top: -0.5ex;
+  }
+  img.plus_icon {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsTAAALEwEAmpwYAAABlUlEQVRIx+VVv0tCURQ+9737tKdDNrpU0C/RiramhoamoKWhoR80STRFRQ0VKggSOBhKYEsITdFSlNA/0dAQNDS4RGWUZvmuvvujJSnRQOU+CPq2yz2c79zv3O8ctBmOdRKjdGEQMiiEABkQQkCHqz3jdOgTmFGaZpz5RoY8YNM0CekRmKYJV9c3XWXTPMeF96LPO9ADy4szCCRiZzchstnXfoVzDpqUyqthwxi44KB8iQZWQWkmOLqfEluReFPV4GaCX3J5eHh6tu4Flkv0Jwl+7cHtXcb/8/xW+EienF0CAlRzL4Rwe3q7Qw0T7CYORTJ1XGN/g5RAVRVYC0Sr7jnnEDs4Cq7451BDBBpWgXFeQ1CZVZRxAPj+rZQxcDodjUu0urRQd2xsR+Li/jELe+ENZEmTeQuO/2c+YIwDNal1BMPePhgfG5VjtHqYnZ5ELUmEEJKufSWnoqoKFA0inSCXL4DNpgFaD0ZPc/nClEPXAWNVxs4HQspAKYU2uz2NXS7XPCmVQwYhbiGk7U7k1PWsoqmBT/2npFI2jh1iAAAAAElFTkSuQmCC");
+  }
+  img.minus_icon {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsTAAALEwEAmpwYAAABIUlEQVRIx+2Vu0oDQRSG/7Ozt+y6jaSReEFFAhY2tsGnEEQEK9Mqgl1ABEEQ1CaQ3kIsfQbBdxAshCAiIsGY3cxe3JyxMKXFFiMI7lee4vuYc4qhw9PO9CCM2kMpV5RSDA0opYxqdbJbcd1tU8bxdZKljfrSPBzb1uFHmma4f3hcCAL/xgyjYWO5voi95hZBI62Ttuq991cNZoZlWdCN69hgZjLGS4N+vp0Gfpky8A8C5k/Ds86len3rFZYwM+Zmatjd2aRCgTTNECdJ4cBoxMjzz+IvaO03qTxyGfhrASLtYho7DSJCnufaAzJOIYQAHRyd3w7CaG22NgXH0fDpEyBlgqfnF/i+d2eSQRvBhH/RD8N1/mCLoGVdsedVroQQx19y2WSksJEjSAAAAABJRU5ErkJggg==");
+  }
+  tr.collapsed img.collapse_icon {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAIAAABv85FHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMjHxIGmVAAAAT0lEQVQYV2PYtXvPRGwAKM4ApP5gA0BxFDlNpyIoCy736/dvCALKwdkIOe/k5cgIIff27RsIAuqDs6Fyj2EAKAdlPX6MLocMQHI4/bd7DwCPWbOTPBU7bQAAAABJRU5ErkJggg==");
+  }
+  tr img.collapse_icon {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAIAAABv85FHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMjHxIGmVAAAANklEQVQYV2PYtXvPRGwAKM4ApH79/o2JgOKUyL19+8Y7eTkyAoog5DARVO4xNkBIDqf/du8BADE5uua8HJOYAAAAAElFTkSuQmCC");
+  }
+  img.pie_icon {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABHNCSVQICAgIfAhkiAAAAqhJREFUWEflmFFu00AURe+Y9JvugDhdAGUFLSugrIBWIpH4SlkB6QqafiE5SGUHJCtoWEHLAmKbFRC+aTPc8dip7TgeezKqkPBXlIzfnNz7PO89C/xjl3DGE4S3EDhkvDmkjOF5czzDDGf+ss0e7oAmoazYeEm4KR68C3zw4yZg7YCCSClwBKyOAW+Ggf91vUk1UI5BjNDBlUkxM9B1tI97DPlPT2lJd72DxHcMegRLLyMQ10ncYU+8roOqBwqiIYQcMdT+htw2QDoIbSTUwL+rsrAaKFFFfuMNjwqU77YH0lAd4VcptQmkYP7Im/SJ2Z6HuwFp+wa9V+UNikCfoy468rbSIrcKpdHkBfoHKiXWVxFoEt7U2pS/c1eFsnwqWfcINFmQVHza7lHpFzdAtE5eYXBwnkXXQNqqqDGMWugMCDFzyS8CtVXHJZCKJcRbvPenyceEbBL+apTI7nNoI7kFvkQn9FGdOe0uV5bpXWfo9060QsFiTMmG7Wgc5lDJfgKFc2KxYLa8XCkk5W/uP87OIwUUFYpmU64yUNP7DOsEE7qqjzGH/5+AYsrxwixJxQopzgpNWhCxZ5LXVrGS5JZT+6TOdnUJxQS3f+wLh6QzpWb2B2PZFydKyY+6dASLJQ/H59beu7LvXvhpLWvZetSR2yuVlA8NlLStq9iJSsnTYpNTbPz7/jzfoLFJEpc722ZjX65JK7ewqid586RQqpbted1sAikC6YlDFduXTwKlYOAd52e0bWOQWyjo/Fj/SXWig5MwxHl5YKwbFMcM8M6JUrkW1RTPNEqr2jRiELtaB/ykCqcFdQxE5pcNKoAeAihxQzCJH1w/LhRekzTp782AsmDJuLRi7ysOOQZ1+XX2EoInPed18IGQfFG15UVCE6Z2QE0i7rjmLw5mV2gKGuBaAAAAAElFTkSuQmCC");
+  }
+  img.status_0 {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAABYlAAAWJQFJUiTwAAAB30lEQVRYw92XvUvDQBjGn4QMgtLGqUMRs3VRK7qH7C461qVZ26UZHf0T0kVH28mxHeweorsWXLpVnATBiyA4FOLgFdLkkrt8lKAH2d57f8+975P7kHzfR5lDRslDEQ1UXUkFYAIw6FcNhXgAHPoNiO4TkbwSrwUUbANop1zcEIDFE5IoQHWlUwADxmpFhwfAJLo/Tu0B1ZVsAKMccNC5I5pLXACd0CvQa704EZEW0LKP1mT6s3A7VgRQw81zlp3nCS1ozHAL7DXCl56wmRWgq/8oglJRqujWLdy9j/H8NWWFbC+rEKyAWRR8cuDgYvcSk6aDvc0mK8xktcAoCr6/dfhbb0XFpOmgokS6aqQSELOKRDhnMAVUWUnvjx7xcPyEq8ZNari3IDiZGvhceCwz8k/DYNLzmskUwYPHmBCqK2mJAnY2diNJwyKywgGA6P48UcDr9ws6s+iPsRSRBx63DxCWD1q1Nq4bA7FtThzuEd1XwxVwWJG3b0NmJXLAV1hcASIi0pY9TkBineNEZICvsOSAKwm9RgmLyAgfBk/DTMdxq9ZGt26hMzPTwiPHcekXEpmxQYwB9NcA77Mup3LMLmUVLKJPc/6ha3mgHRrv70h4mGhJcKGXUelPs3//Ov4Bq1wXZMwPrCIAAAAASUVORK5CYII=");
+  }
+  img.status_1 {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAABYlAAAWJQFJUiTwAAABqElEQVRYw+VXMUvDQBT+LhSKi62CDnLQQFeh6i5tf0Gz6NrOTvUf9A8omVztrIv6Byy4qwXXQoTDQZfqIp3OIRdp0mtyuUsawQeB5O7dve++9+67HOGco0izULDpA2CkBUY88bR0pyFaKfAD3kda26B8tCoGXMW2HAAw0gPQkPQ0RF/OKWDEA1Bb0vsKyu38GGCkHxMcAGrCJwcGGKkC8ABUEjw/AdigfJo1A32F4BA+/WwZYMQG8DwPYMJoyKVOWZSFPVDuJU1dUgQ6iAa/uD4OOZwcXc2DqIgxPfMU+KvvamzxrhhrXANDA6kfmgHwJbdpAKCZdE5YCrlfsM31r4W2SBEmzpEMgBFn2eo3JAASWHB0GHCRnbnpAPiHSpzkYq08k77HSHRPTYjUJTetSSXaMpDctCaV6DADKVb/Mqnj7WMbALCz9Y7d+kSLhZKkWJRWf3nXCX2fnZ6rsuDOS7SVgeQaSbSlKhgZ2yBcA/K/3Fh7eDrA96z8uw0P9x/TgmiD8lEA4AZAZ8V3kltQ7gQpqBZwKar+qavZAMB4hXHHQSGSf387/gHGFYan3D1TDQAAAABJRU5ErkJggg==");
+  }
+  img.status_2 {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAABYlAAAWJQFJUiTwAAACHUlEQVRYw92XQWrbQBSGv9iBkIXdVKtAHOxNMVlkoRvkAqWtl4ZQHcCQ7EJ0AJnuZNABZApe2oZeIDfwwgsjukmIA12pcbswWRR3MynyZGYkYRu3fSAQ0pv5/3nvnzdvdhaLBdu0Alu23ayOI6t+ADjAmXheSS4z4EY8oR1Hj1nm3UlLgQD2gY85F9cFLtOIGAmMrPp7IFSsNqvNAMeOo2FuDYysug8MVgBHjB2IubITEAMu1qi1Cx2JFykQYR9sSPQf5HQsERCCu10x7GmaqCWFKafA14EXyyWqQZvDq5Z29sOrFtWgTbFcMmnCV0ZArP67DvzNl8/sn54AEPf63LWul3yqQRur2QBgPp7w9e05v3781BF5/RyFZAQcnXfFc/+AA1jNBtWgrQQH2D89oeK5plQ4qkp4pvN+un948S0JmHw3jZGwfDkFjybxyas0mSpFshjtODqQU2BU/l3rmrjXXwf4Elau0zCNREbw54jXtnoc23F0m5tAmg7k3ZG3IZmtAp6TxExF4MZU4VTgca+v1ITVbBgrZhJrV/r4TuW9d3yUKjiZoGqMikAyAqHOe+p6zMcTLbi8O+bjCVPXMxEIdadhqGu9iuUSFc/l6f6Bb58Cbar2jo+Yup7pHOjaceT8ncex+OFscPs7cpNaUBSIIdDZAHhH1ZwWNFXqcs0kOmLOf6gtT6SjJi4Zea0rBDdc6Wa09avZf387/g0BtAAhkyp+PwAAAABJRU5ErkJggg==");
+  }
+  img.status_3 {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAFOklEQVRYw8VX61MTVxT/XbKbbF4QmkDC+904wliqFjuCVagCg3ZAGbXWTmc6bfVjZ/xnWv3mtHXs2PqorRqf+EANaktV6gM0SDAN5GGUkGzIhu0Hzc2um4RgP3g+3Xvuuef87m/PPfcs8JaFAAAfm8vJWBRFCEICUT52M8LzKyJRHgCg03LQsCwKTflEFEUQQnLyx2nUYHIKmkjAF3gmOq874XG7spqvXrseNmsRrBYzIQQLgsnKgCAkMOULiEd//fmN6O3r344Sq4Xk5eVlZCAtAEKAaDSGh48nxMvnTyk2fvjRx9BxHLQch5f7Y4jF47hy3qGwbV3XCXt9NdFymtwBhGcju0ZdE3uvDpyhug/a2lFqLUJdVXnWU4+Ou+Ge9GB4aJDqmltasaxxyT6jXrd7QQCRKI+/7vwjSh1s7OuHvbZqUfTfGxvHyd8Oy0AsX9YoY0IBQBASuD/mEi+ePQkAMBfb0NXVBVuRWRHgyVMvEkIC86IIHaeBluNQaDLKbLy+ABwOBwLTXvo5li1toDkhAyCKIjxenyzhPt35BUqtFpnTsfFJ+PxBXLt0VqY35Juwes1aNNnrFCAO/LCfzrds3YESq4UoAMQFAfu+/05MGvb0bsGSumqZs5EHj+H442hW6lvXdWLV8iZ5XrjcOH7kEJ1/vWs30ajV4DRq0Psx7Q/S4DXvLlUEHxt3LxgcAAYHTmN45KFM11BTgeaWVjr3B0M0Fi1EU74ANWhqalQ4Tgjzsnl710ZYCk1gWQb+QAinTxyja+cdv6PJ/i0YRkV1NZXlGB56Of779m2U2dYDwEsG4nEB1y6mvmlDdYUCgL2+Chv7+gEAHd2b8H6jHRWlVtiKzGhaUofW9k6Zvdvjlc1rKsvo2PXwHk185lUO7JUWmUxir62Cfc+e9NRfOC2vyenyo72T2kWjvAiAMADw/MXMrqRRvtGwqPs+PuHB4V8OKm5EreTESSkwpq5paGYmxcCcEKcLrIrJObjz1h0MXjyj0G/Y0J354ZE8cpIkJIt+aJx/3k0bfNtnn6PcVpx2D8OmkjIeT6QA6LQcXYjyfE4ABgfk37ytowstzY1Z90T5GB3rX8XMAwANy6beghwBvC4LBQeA+JzkU6vZFANGg44kE/f6pXNYvfK9BZ1t3bET4XAEIgCDXpcTyBvOq5KENBDKgIph0LKmQ1b1FhJWxWBmNoLwbASqDA2HVCb/nUb4RQgAUFpRDU6jTjFAAFSW2vCqUGFi0oP6NMUoKXxsDgd+3C/TffnVNygsMGbc4/ZM0fHyFSvpmEJ/x1RAr8Lw0CBGXZlZcLk9Cp3H68to/+jJU1yT3BhbsYUoADCMCn3926nR8SOH4J0OpHVoSlOsjAZ9WtspfxDHJE98b/82aNSskgFCCKxFZtLW3kUXHQ4HpvxBhdMSqwWdPb0oq6yFMd+E7k2bUVlmVdg9C81g5P5o6qa0dcBqMZOsXXGUj2HkwSPRefkc1X2yeSsaairSds18bA4GvVbZMU164Th1giaeudiGnp6eW/kG/cqsPSEhQHg2umL47r2b0r5w1ZoOlNmKUV1RmjXb3Z4puJ96cV1ygGRrV1iQT3LqipNMPBgbF1+veACwbkMP1GoWWk4DIZ6ACOBFOIzhm056Yint9vpq2clzAgAA8/Pz8AdD4qGDP71Rdezt3warxUxYllncj4mihMYF+AJBcdI7jRtXLmS1bV7VivISG2zFRUSa7f8LgLTJSAgJBELPxfhcHLNRHiyrAiEEBQYD1Gp2t0Gv25crQ8lq+FblP/zODw/8PYVeAAAAAElFTkSuQmCC');
+  }
+  img.status_grayed_0 {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAABlElEQVRYw+2XMY+CMBTH/7SKI3FxYCAGNhJ18Pt/BB00YcOYDgwshvWZBy53lyoUqDQXk7s3kdL09+M9KK/AXw9v7EQiipVSeVVVkFJ2zmFmBEGAKIoS3/cvTgSIKD6fz7kJagpmxmazGRTpFSiKoinLclKKV6sVwjD0rAVOp1NT17WTOgshsN1uvdECLuFDEqIr7a7hAFDXNYqiaHoFiCieWvO+KMsSRBQbS3A4HBrbt902mBn7/d5rZYCIYpfwxWLROS6lfMrC7PtCKZW7gq/XawRBgPv9jizLWve/WN5TBqqqcgoHgPl8jjRNW3N0ltBT4xLeFzprNnZRpRRut5sV3FSC3n3AtGgURVgul07hgwKvi3ZJTIEPChyPx9aYLjEVPiggpTRK7Ha7yfAnAWa2kngNG7jOEqZ620jYPrnOElpak3fK8U7addaPgO/7F1MZTBLvwJkZepvmvf6OsyzLxyySJAmu16v1bpmmaWIUcNUH2vSHrc8wDENPCOEcLoTobE4/syn9iLb8Iw4mv3E0+48HR7f/54xftNkAAAAASUVORK5CYII=");
+  }
+  img.status_grayed_1 {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAABiklEQVRYw+1WS47CMAx9cVE/UOgOdQvDOeDsSaWuOQDMAboEWgkh0tlMRwoUmriUWcx41bhx/OzYzwH+ugiuoVKqnkwmAICyLLFer8XbACil6ul0auiOxyMLBHEANJF36QYBkOd5TXRvRkTI87weHEAQBKx/LwHwKPo+WbAGIKVcRlHUuS+KIkgply8HEATBfoi9gtt2cRwb69PpxGrLEafw4jjGarUydLvdzgBhW5BkE73v+87V7fs+lFJ1bwDj8ZjN8za21BW953lsAJ7ndWaBOBFcLpc73W0R2mbhIYAsyx5Gfz6fnbKQZVntDKDP3bucRRzKBYDr9dr67UrRoo1yZ7PZHgPI4XD42Gw2n08z4EKjjEm6f3oFUsqlLYMlSYI0TZGmKZIksR7lt4PKoOIwDK2jXywWxnq73VrZffsQdxngUm5fiqY+r5ketWB2Qdu47ZL5fI6mVbXWKIrCyb4Z16PmFeMqrg7bXk4/VyCEwLul8Un4ZSEAqKoKWuu3OdVao6oq/AsAfAFCNJQOArzVRwAAAABJRU5ErkJggg==");
+  }
+  img.status_grayed_2 {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAABtUlEQVRYw+2XQYvCMBCFX6IQSrGHEiilpx69iP//V4gXjzkFKQQPhRJ60O5pJdsmU6N1EXZzstbM9zJ9M06Bv75YzI+VUsPlcsFqtfLev16vyPMcdV2zRQUcj8fhdrtFnYxzjt1ux14S0DTNcD6fX0pxWZYoioJFCzidTkPf94s8ZyEEttste1jAkvA5EdyX9qXhAND3PZqmGWYFvPrMqeWLzcdupwJIKZGmafB+mqaQUs5WlHu9di+oUqvrGlmWAQC01jDGTMRVVQUA2Gw2UEp544wZ3G0y1Mm/4QBQVdWPk7pwAMiyjMyEy7pngOpw1trJdy7Q/UztcVmTDITgANB1HbTWXhE+uNYaXdcF47ks/qiDjTFeET742B9ky44pozkRsfBoAe9YUQLGbvd5Yq4PPC1gDv6sCO4OE1SHC7k9VB1Ux3RZdwF5ngc3JEkSNFzImL49PhZ3Wi2j3N+2bdDtYxFt25LV4LLW4zEq9H+glIKUEtZab5MxxsBaiyRJSDjnnB5IDofD8M6y2+/3jKyCsizfBvfFnggoioIJIRaHCyG8w+lnDqUfMZZ/xIvJb7ya/a8vw3Xv2jad2bgAAAAASUVORK5CYII=");
+  }
+  .print_only { display: none; }
+}
+
+@media print {
+  .no_print { display: none; }
+  .print_only { display: inline; }
+  h2 { display: none; }
+  #testList { padding: 0px; border: 0px; }
+  #testList td { border-bottom: 1px solid #eeeeee; }
+  #testList > div.overflow { height: auto; overflow: visible; }
+  #testList > div.visible  { height: auto; overflow: visible; }
+  #logStatusText a, #testList a { color: black; }
+  #logStatusImage { padding-left: 0px; }
+  #testList .test-status img.status { display: none; }
+}
+</style>
+
+<script language="JavaScript">
+function windowResized() {
+  var testList = document.getElementById("testList");
+  if (!testList)
+    return;
+
+  var listRect = testList.getBoundingClientRect();
+  var tests = document.getElementById("testListTable");
+
+  var scrollHeight = 0;
+  var testListDiv = document.querySelector("#testList > div");
+  if (testListDiv) scrollHeight = (testListDiv.offsetHeight - testListDiv.clientHeight);
+  if (scrollHeight < 0) scrollHeight = 0;
+
+  if (tests.rows.length > 1)
+  {
+    var viewportHeight = (window.innerHeight || document.documentElement.clientHeight);
+    testList.style.height = Math.max(51 + scrollHeight, Math.min((viewportHeight - listRect.top - 20), tests.offsetHeight)) + "px";
+  }
+}
+
+function updateTestsVisibility(table, tab_status) {
+  for (var i = 1; i < table.rows.length; i++)
+  {
+    var row = table.rows[i];
+    var row_level = parseInt(row.getAttribute("data-level"));
+    var row_status = parseInt(row.getAttribute("data-status"));
+	var row_data_parent_status = parseInt(row.getAttribute("data-parent-status"));
+	
+	var visible = false;
+	
+	if (tab_status == -1 || tab_status == 3) {
+	  visible = (row_level == 0) && ((tab_status < 0 && row_status != 3) || (row_status == tab_status));
+	} else {
+	  if (tab_status == 0 || tab_status == 1  || tab_status == 2) {
+	      visible = (row_data_parent_status == tab_status) || (tab_status == row_status && row_level == 0);
+	  }
+	}
+	
+	if (row_level == 1 && row.classList.contains('collapsed')) {
+	  visible = false;
+	}
+
+    row.style.display = visible ? "table-row": "none";
+
+	if (row.hasAttribute("data-children")) {
+	  var collapse_btn = row.querySelector("img.collapse");
+	  
+	  if (tab_status == -1 || tab_status == 2) {
+		row.classList.remove("children_allowed");
+	  } else {
+		row.classList.add("children_allowed");
+      }
+	  
+	  if (tab_status == -1) {
+	    collapse_btn.classList.remove("collapse_icon");
+	  } else {
+	    collapse_btn.classList.add("collapse_icon");
+      }
+	}
+  }
+}
+
+function tabButtonClick(btn) {
+  btn = btn.firstElementChild;
+
+  if (!btn ||
+    btn.className.indexOf("tab_button_active") >= 0 ||
+    btn.className.indexOf("tab_button_disabled") >= 0)
+    return;
+
+  var active_btn = document.querySelector(".tab_button_active");
+	
+  btn.classList.add("tab_button_active");
+  if (active_btn) {
+    active_btn.classList.remove("tab_button_active");
+	active_btn.classList.remove("tab_button_hover");
+  }
+
+  var tests = document.getElementById("testListTable");
+  if (!tests)
+    return;
+
+  var tab_status = -1;
+  if (btn.hasAttribute("data-status"))
+    tab_status = parseInt(btn.getAttribute("data-status"));
+
+  updateTestsVisibility(tests, tab_status);
+
+  var startTimeColumn = document.querySelector("#testListTable th[data-name=\"startTime\"]");
+  if (startTimeColumn)
+     startTimeColumn.style.display = (tab_status == 3) ? "none" : "";
+
+  var durationColumn = document.querySelector("#testListTable th[data-name=\"duration\"]");
+  if (durationColumn)
+     durationColumn.style.display = (status == 3) ? "none" : "";
+
+  var testListDiv = document.querySelector("#testList > div");
+  if (testListDiv)
+     testListDiv.className = "visible";
+
+  windowResized();
+
+  if (testListDiv)
+     testListDiv.className = "overflow";
+
+  windowResized();
+}
+
+function tabButtonMouseOver(btn, hover) {
+  btn = btn.firstElementChild;
+
+  if (!btn ||
+    btn.className.indexOf("tab_button_active") >= 0 ||
+    btn.className.indexOf("tab_button_disabled") >= 0)
+    return;
+
+  if (hover) {
+    btn.classList.add("tab_button_hover");
+  } else {
+    btn.classList.remove("tab_button_hover");
+  }
+}
+
+function ShowHide(Id) {
+  var img = document.getElementById(Id + "_Img");
+  if (img == null) return;
+  var elem = document.getElementById(Id);
+  if (elem == null) return;
+  var section = document.getElementById(Id + "_Section");
+  img.src = null_image;
+  if (elem.style.display == "")
+  {
+    img.className = "plus_icon";
+    elem.style.display = "none";
+    if (section) section.className = "";
+  }
+  else
+  {
+    img.className = "minus_icon";
+    elem.style.display = "";
+    if (section) section.className = "whiteBack";
+  }
+
+  windowResized();
+}
+
+window.onresize = windowResized;
+</script>
+
+<script>
+var PieChart = function(canvasId, data, options)
+{
+  if (data == null || data.length == 0)
+    return;
+
+  var canvas = document.getElementById(canvasId);
+
+  if (canvas == null || typeof(canvas.getContext) === 'undefined')
+    return;
+
+  var total = 0;
+  for (var i = 0; i < data.length; i++)
+    total += data[i].value;
+
+  if (total == 0)
+    return;
+
+  var ctx = canvas.getContext('2d');
+
+  var dpr = window.devicePixelRatio || 1,
+      bsr = ctx.webkitBackingStorePixelRatio ||
+            ctx.mozBackingStorePixelRatio ||
+            ctx.msBackingStorePixelRatio ||
+            ctx.oBackingStorePixelRatio ||
+            ctx.backingStorePixelRatio || 1;
+  var ratio = dpr / bsr;
+  var zoom = 1.0;
+  if (options && options.zoom)
+    zoom = options.zoom;
+
+  var w = parseInt(canvas.width);
+  var h = parseInt(canvas.height);
+  canvas.width = w * ratio;
+  canvas.height = h * ratio;
+  canvas.style.width = w + "px";
+  canvas.style.height = h + "px";
+  ctx.setTransform(ratio * zoom, 0, 0, ratio * zoom, 0, 0);
+
+  ctx.font = '13px Tahoma';
+  ctx.globalAlpha = 1.0;
+  ctx.lineJoin = "round";
+
+  var radius = 75;
+  var center = { "x": 130, "y": 100 };
+
+  if (options && options.marginLeft)
+    center.x += options.marginLeft;
+  if (options && options.marginTop)
+    center.y += options.marginTop;
+
+  var sofar = 0;
+  for (var i = 0; i < data.length; i++)
+  {
+    var thisvalue = data[i].value / total;
+    if (data[i].value == 0)
+      continue;
+      
+    ctx.beginPath();
+    if (data[i].value != total)
+      ctx.moveTo(center.x, center.y);
+    ctx.arc(center.x, center.y, radius, (1.5 - 2 * sofar) * Math.PI, (1.5 - 2 * (sofar + thisvalue)) * Math.PI, true);
+    if (data[i].value != total)
+      ctx.lineTo(center.x, center.y);
+    ctx.strokeStyle = data[i].color;
+    ctx.closePath();
+    ctx.fillStyle = data[i].color;
+    ctx.fill();
+    ctx.stroke();
+
+    sofar += thisvalue;
+  }
+}
+</script>
+
+<script>
+var nav = navigator.userAgent.toLowerCase();
+var isIE = (nav.indexOf("msie") >= 0) || (nav.indexOf("trident/7.0") > 0);
+var loc = isIE ? "probably.mht" : "";
+try { loc = window.document.location.href; } catch (e) { }
+var isMHT = (loc.indexOf("mhtml:") == 0) || (loc.indexOf(".mht") == loc.length - 4);
+
+var null_image = isMHT ? "http://localhost/null.gif" : "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7";
+
+var status_items = [];
+status_items[0] = "messages";
+status_items[1] = "warnings";
+status_items[2] = "errors";
+
+var status_glyphs = [];
+status_glyphs[0] = "&#x2714;";
+status_glyphs[1] = "!";
+status_glyphs[2] = "&#x2716;";
+status_glyphs[3] = "?";
+
+var status_colors = [];
+status_colors[0] = "passed";
+status_colors[1] = "warning";
+status_colors[2] = "failed";
+status_colors[3] = "unexecuted";
+
+function CollapseRootTableItem(dataIndex) {
+  var collapsedClass = "collapsed";
+  var table = document.getElementById('testListTable');
+  if (!table || !data)
+    return;
+
+  var active_btn = document.querySelector(".tab_button_active");
+  var tab_status = -1;
+  if (active_btn && active_btn.hasAttribute("data-status"))
+    tab_status = parseInt(active_btn.getAttribute("data-status"));
+  
+  if (tab_status < 0) {
+    return;
+  }
+
+  var elements = table.querySelectorAll("[data-index='" + dataIndex + "']");
+  if (!elements)
+    return;
+	
+  var rootItem = undefined;
+  var childItems = [];
+  
+  for (var i = 0; i < elements.length; i++) {
+    if (elements[i].getAttribute('data-child-index')) {
+	  childItems.push(elements[i]);
+	} else {
+	  rootItem = elements[i];
+	}
+  }
+  
+  if (!rootItem)
+    return;
+
+  var isCollapsed = rootItem.classList.contains(collapsedClass);
+  
+  if (isCollapsed) {
+    rootItem.classList.remove(collapsedClass);
+	
+	for (var i = 0; i < childItems.length; i++) {
+	  childItems[i].style.display = "table-row";
+	  childItems[i].classList.remove(collapsedClass);
+	}
+  } else {
+    rootItem.classList.add(collapsedClass);
+	
+	for (var i = 0; i < childItems.length; i++) {
+	  childItems[i].style.display = "none";
+	  childItems[i].classList.add(collapsedClass);
+	}
+  }
+  
+  windowResized();
+}
+
+function FillTestList(tableId, data, showUnexecuted)
+{
+  var table = document.getElementById(tableId);
+  if (!table || !data)
+    return;
+
+  var single_project = true;
+  for (var i = 1; i < data.length; i++)
+    if (data[i].project != data[i-1].project)
+      single_project = false;
+  if (single_project)
+  {
+    var project_column = document.querySelector("#testListTable th[data-name=\"project\"]");
+    if (project_column)
+      project_column.style.display = "none";
+  }
+
+  for (var i = 0; i < data.length; i++)
+  {
+    var status = data[i].status;
+    if (status < 0 || status > 3) status = 2;
+
+    var onclick = "";
+    if (data[i].link.indexOf("onclick=") < 0)
+      onclick = " onclick='GoToExecutionPoint(this)'";
+
+    var hasIterations = data[i].iterations && data[i].iterations.length > 1;
+
+    var tr = table.insertRow();
+    tr.setAttribute("data-status", status);
+    tr.setAttribute("data-index", i);
+	tr.setAttribute("data-level", 0);
+	tr.className = "collapsed";
+	
+	if (hasIterations) {
+	  tr.setAttribute("data-children", data[i].iterations.length);
+	}
+	
+    tr.insertCell();
+	
+	var collapseElement = "";
+	
+	if (hasIterations) {
+	  collapseElement = "<img src='" + null_image + "' class='collapse' onclick='CollapseRootTableItem(" + i + ")'>";
+	} else {
+	  collapseElement = "<img src='" + null_image + "' class='collapse'>";
+	}
+	
+	tr.cells[0].innerHTML = collapseElement + "<img src='" + null_image + "' class='status status_" + status + "'>" + 
+		"<span class='print_only " + status_colors[status] + "'>" + status_glyphs[status] + "</span>";
+	tr.cells[0].className = "test-status";
+	tr.cells[0].setAttribute("nowrap", '');
+	
+    tr.insertCell(); tr.cells[1].innerHTML = (data[i].link ? "<a href='" + data[i].link + "'" + onclick + ">" + data[i].name + "</a>" : data[i].name) + "<img src='" + null_image + "' class='attention'>";
+    tr.insertCell(); tr.cells[2].innerHTML = data[i].project;
+    tr.insertCell(); tr.cells[3].innerHTML = (status == 3) ? "" : (new Date(data[i].startTime)).toLocaleString();
+    tr.insertCell(); tr.cells[4].innerHTML = (status == 3) ? "" : secondsToString(data[i].duration);
+    if (single_project) tr.cells[2].style.display = "none";
+    if ((status == 3) != showUnexecuted) tr.style.display = "none";
+	
+	if (hasIterations) {
+	  for (var j = 0; j < data[i].iterations.length; j++) {
+	    var iterationStatus = data[i].iterations[j].status;
+	    var tr = table.insertRow();
+		tr.setAttribute("data-status", iterationStatus);
+		tr.setAttribute("data-parent-status", status);
+		tr.setAttribute("data-index", i);
+		tr.setAttribute("data-child-index", j);
+		tr.setAttribute("data-level", 1);
+		var content = "<span class='test-status'><img src='" + null_image + "' class='status status_" + iterationStatus + "'>" +
+			"<span class='print_only " + status_colors[iterationStatus] + "'>" + status_glyphs[iterationStatus] + "</span></span>" +
+			(data[i].link ? "<a href='" + data[i].iterations[j].link + "'" + onclick + ">" + data[i].name + "</a>" : data[i].name);
+
+		tr.insertCell(); tr.cells[0].innerHTML = "";
+		tr.insertCell(); tr.cells[1].innerHTML = content;
+		tr.insertCell(); tr.cells[2].innerHTML = data[i].project;
+		tr.insertCell(); tr.cells[3].innerHTML = (iterationStatus == 3) ? "" : (new Date(data[i].iterations[j].startTime)).toLocaleString();
+		tr.insertCell(); tr.cells[4].innerHTML = (iterationStatus == 3) ? "" : secondsToString(data[i].iterations[j].duration);
+		if (single_project) tr.cells[2].style.display = "none";
+		tr.style.display = "none";
+		tr.className = "collapsed";
+	  }
+	}
+  }
+
+  var time_column = document.querySelector("#testListTable th[data-name=\"startTime\"]");
+  if (time_column)
+    SortTestList("testListTable", time_column, true);
+}
+
+var _SelectedItem = null;
+function GoToExecutionPoint(link, logId, providerId, itemId)
+{
+  if (_SelectedItem)
+    _SelectedItem.style.backgroundColor = "";
+
+  var tr = null;
+  if (link && link.parentNode)
+  {
+    tr = link.parentNode;
+    while (tr && tr.nodeName.toLowerCase() != "tr") tr = tr.parentNode;
+    if (tr)
+    {
+      _SelectedItem = tr;
+      tr.style.backgroundColor = "#cce8ff";
+    }
+  }
+
+  if (logId === undefined)
+    return;
+
+  parent.postMessage(["logtree_gotoExecutionPoint", logId, providerId, itemId], "*");
+}
+
+var _SortedColumnIndex = -1;
+var _SortColumnDataName = "";
+
+function SortTestList(tableId, column, initial)
+{
+  var table = document.getElementById(tableId);
+  if (!table || !column)
+    return;
+
+  if (_SortedColumnIndex >= 0 && _SortedColumnIndex != column.cellIndex)
+    table.rows[0].cells[_SortedColumnIndex].className = "";
+
+  _SortedColumnIndex = column.cellIndex;
+  _SortColumnDataName = column.getAttribute("data-name");
+
+  var sortFunction = table_sort_caseinsensitive;
+  var dataType = column.getAttribute("data-type");
+  if (dataType == "numeric")
+    sortFunction = table_sort_numeric;
+  else if (dataType == "datetime")
+    sortFunction = table_sort_datetime;
+
+  var sortRows = [];
+  var childRows = [];
+  
+  for (var i = 1; i < table.rows.length; i++) {
+    var row = table.rows[i];
+	var dataIndex = parseInt(row.getAttribute("data-index"));
+	var childDataIndex = parseInt(row.getAttribute("data-child-index"));
+	
+	if (isNaN(childDataIndex)) {
+	  sortRows[dataIndex] = row;
+	} else {
+	  if (childRows[dataIndex] == undefined) {
+	    childRows[dataIndex] = [];
+	  }
+	  childRows[dataIndex][childDataIndex] = row;
+	}
+  }
+
+  var sortAsc = (column.className.indexOf("sortAsc") < 0);
+
+  if (sortAsc) sortRows.reverse();
+  sortRows.sort(sortFunction);
+  if (!sortAsc) sortRows.reverse();
+  
+  var sortedRows = [];
+  for (var i = 0; i < sortRows.length; i++) {
+	var dataIndex = parseInt(sortRows[i].getAttribute("data-index"));
+	var children = childRows[dataIndex];
+	
+	sortedRows.push(sortRows[i]);
+	if (children != undefined) {
+	  for (var j = 0; j < children.length; j++) {
+	    sortedRows.push(children[j]);
+	  }
+	}
+  }
+
+  for (var i = 0; i < sortedRows.length; i++) 
+    table.tBodies[0].appendChild(sortedRows[i]);
+
+  column.className = (initial ? "" : "column_hover ") + (sortAsc ? "sortAsc" : "sortDesc");
+}
+
+function table_sort_numeric(a, b)
+{
+  var index1 = parseInt(a.getAttribute("data-index"));
+  var index2 = parseInt(b.getAttribute("data-index"));
+
+  var aa = parseFloat(data.tests[index1][_SortColumnDataName]);
+  if (isNaN(aa)) aa = 0;
+
+  var bb = parseFloat(data.tests[index2][_SortColumnDataName]);
+  if (isNaN(bb)) bb = 0;
+
+  if (aa == bb)
+    return table_ordinalCompare(data.tests[index1]["name"], data.tests[index2]["name"]);
+
+  return aa - bb;
+}
+
+function table_sort_datetime(a, b)
+{
+  var index1 = parseInt(a.getAttribute("data-index"));
+  var index2 = parseInt(b.getAttribute("data-index"));
+
+  var a_msec = (new Date(data.tests[index1][_SortColumnDataName])).getTime();
+  var b_msec = (new Date(data.tests[index2][_SortColumnDataName])).getTime();
+
+  if (a_msec == b_msec)
+    return table_ordinalCompare(data.tests[index1]["name"], data.tests[index2]["name"]);
+
+  return table_ordinalCompare(a_msec, b_msec);
+}
+
+function table_ordinalCompare(a, b)
+{
+  if (a == b) return 0;
+  if (a < b) return -1;
+  return 1;
+}
+
+function table_sort_caseinsensitive(a, b)
+{
+  var index1 = parseInt(a.getAttribute("data-index"));
+  var index2 = parseInt(b.getAttribute("data-index"));
+
+  var aa = data.tests[index1][_SortColumnDataName].toLowerCase();
+  var bb = data.tests[index2][_SortColumnDataName].toLowerCase();
+
+  return table_ordinalCompare(aa, bb);
+}
+
+function listColumnMouseOver(column, hover)
+{
+  if (!column)
+    return;
+  if (hover && column.className.indexOf("column_hover") < 0)
+    column.className += " column_hover";
+  if (!hover && column.className.indexOf("column_hover") >= 0)
+    column.className = column.className.replace("column_hover", "");
+}
+
+function secondsToString(t)
+{
+  t = Math.abs(t);
+  var h = Math.floor(t / 3600);
+  var m = Math.floor(t % 3600 / 60);
+  var s = Math.floor(t % 60);
+  var result = " ";
+  if (h > 0 || result.length > 0) result += ((h < 10 && result.length > 0) ? "0" : "") + h + ":";
+  if (m > 0 || result.length > 0) result += ((m < 10 && result.length > 0) ? "0" : "") + m + ":";
+  result += ((s < 10 && result.length > 0) ? "0" : "") + s;
+  return result;
+}
+</script>
+
+<script>
+var data = {
+  "summary": {
+   "title": "TestAutomationMusalaSoftWebPage: TestCase Musala Soft",
+   "status": 0,
+   "logLink": "#' onclick='GoToExecutionPoint(this, \"\", \"{00000000-0000-0000-0000-000000000000}\", \"\")",
+   "startTime": "2023-03-17T22:46:39.401+02:00",
+   "stopTime": "2023-03-17T22:48:41.156+02:00",
+   "duration": 122,
+   "userName": "Dimitar",
+   "hostName": "DDIMITROV",
+   "testsExecuted": 4,
+   "testsPassed": 4,
+   "testsWarnings": 0,
+   "testsFailed": 0,
+   "testsIncompleted": 0,
+   "testsPassedWithRetries": 0,
+   "testsWarningsWithRetries": 0
+  },
+  "tests": [
+{
+"status": 0, "name": "TestCase1", "project": "TestAutomationMusalaSoftWebPage", "startTime": "2023-03-17T22:46:39.511+02:00", "duration": 39, "link": "#' onclick='GoToExecutionPoint(this, \"{63C5509D-6B93-474F-A8A8-A1A40512D32A}\", \"{00000000-0000-0000-0000-000000000000}\", \"\")", "iterations": [
+  ]
+}
+,
+{
+"status": 0, "name": "TestCase2", "project": "TestAutomationMusalaSoftWebPage", "startTime": "2023-03-17T22:47:18.945+02:00", "duration": 17, "link": "#' onclick='GoToExecutionPoint(this, \"{334D4632-8045-46ED-93F0-C8287C56291F}\", \"{00000000-0000-0000-0000-000000000000}\", \"\")", "iterations": [
+  ]
+}
+,
+{
+"status": 0, "name": "TestCase3", "project": "TestAutomationMusalaSoftWebPage", "startTime": "2023-03-17T22:47:35.475+02:00", "duration": 45, "link": "#' onclick='GoToExecutionPoint(this, \"{4B25558E-E075-48F0-8858-00DADDAA8AD9}\", \"{00000000-0000-0000-0000-000000000000}\", \"\")", "iterations": [
+  ]
+}
+,
+{
+"status": 0, "name": "TestCase4", "project": "TestAutomationMusalaSoftWebPage", "startTime": "2023-03-17T22:48:20.638+02:00", "duration": 20, "link": "#' onclick='GoToExecutionPoint(this, \"{AC936191-D233-45CD-9370-F5FFE72C8E59}\", \"{00000000-0000-0000-0000-000000000000}\", \"\")", "iterations": [
+  ]
+}
+  ]
+}
+;
+</script>
+</head>
+<body>
+
+<table class="testHeader">
+ <tr><td colspan="2"><h1>Test Execution Summary</h1></td></tr>
+ <tr>
+ <td>
+  <div id="Chart_Section" class="section">
+   <canvas id="idChart" width="126" height="130"></canvas>
+  </div>
+ </td>
+ <td>
+  <table id="logTitleTable">
+   <tr><td class="data" id="logTitle">Test</td></tr>
+  </table>
+  <table>
+   <tr><td colspan="3" id="executionSummary">
+     <span style="white-space:nowrap"><span class="bullet black"  >&#x25CF;</span>Test Cases Run: <span class="data">0</span></span>
+     <span style="white-space:nowrap"><span class="bullet failed" >&#x25CF;</span>Failed:   <span class="data">0</span></span>
+     <span style="white-space:nowrap"><span class="bullet warning">&#x25CF;</span>Warnings: <span class="data">0</span></span>
+     <span style="white-space:nowrap"><span class="bullet passed" >&#x25CF;</span>Passed:   <span class="data">0</span></span>
+     <span style="white-space:nowrap"><span class="bullet unexecuted">&#x25CF;</span>Unexecuted: <span class="data">0</span></span>
+   </td></tr>
+  </table>
+  <table id="execDurationTable">
+   <tr><td>Execution duration:</td><td class="data" id="execDuration">N/A</td></tr>
+  </table>
+  <table id="logStatusTable" class="status_0">
+   <tr><td><img id="logStatusImage"></td><td id="logStatusText">There are errors in the Log Details</td></tr>
+  </table>
+ </tr>
+</table>
+
+<div id="GeneralResults_Section">
+ <h2><a href="#" onclick="ShowHide('GeneralResults')"><img id="GeneralResults_Img"/>General</a></h2>
+ <div id="GeneralResults" class="section">
+  <table>
+   <tr><td class="generalCellTitle">Execution started:</td><td class="generalCellData" id="execStartTime">N/A</td><td class="generalCellTitle2">User:</td><td class="generalCellData" id="execUserName">N/A</td><td></td></tr>
+   <tr><td>Execution stopped:</td><td class="generalCellData" id="execStopTime">N/A</td><td class="generalCellTitle2">Computer:</td><td class="generalCellData" id="execHostName">N/A</td><td></td></tr>
+  </table>
+ </div>
+</div>
+
+<table id="testListTabs" class="no_print"><tr>
+<td>
+ <a href="#" onclick="tabButtonClick(this)" onmouseover="tabButtonMouseOver(this, true)" onmouseout="tabButtonMouseOver(this, false)">
+  <div class="tab_button"><img class="tab_icon"><span class="tab_icon_text"> Total executed: <span class="bold">0</span></span></div>
+ </a>
+</td>
+<td>
+ <a href="#" onclick="tabButtonClick(this)" onmouseover="tabButtonMouseOver(this, true)" onmouseout="tabButtonMouseOver(this, false)">
+  <div class="tab_button" data-status="2"><img class="tab_icon"><span class="tab_icon_text"> Failed: <span class="bold">0</span></span></div>
+ </a>
+</td>
+<td>
+ <a href="#" onclick="tabButtonClick(this)" onmouseover="tabButtonMouseOver(this, true)" onmouseout="tabButtonMouseOver(this, false)">
+  <div class="tab_button" data-status="1"><img class="tab_icon"><span class="tab_icon_text"> Warning: <span class="bold">0</span></span><div id="retries_info_warning" class="retries_info retries_info_hidden" style="text-align: left; padding-left:35px;"></div></div>
+ </a>
+</td>
+<td>
+ <a href="#" onclick="tabButtonClick(this)" onmouseover="tabButtonMouseOver(this, true)" onmouseout="tabButtonMouseOver(this, false)">
+  <div class="tab_button" data-status="0"><img class="tab_icon"><span class="tab_icon_text"> Passed: <span class="bold">0</span></span><div id="retries_info_success" class="retries_info retries_info_hidden" style="text-align: left; padding-left:35px;"></div></div>
+ </a>
+</td>
+<td>
+ <a href="#" onclick="tabButtonClick(this)" onmouseover="tabButtonMouseOver(this, true)" onmouseout="tabButtonMouseOver(this, false)">
+  <div class="tab_button" data-status="3"><img class="tab_icon"><span class="tab_icon_text"> Unexecuted: <span class="bold">0</span></span></div>
+ </a>
+</td>
+</tr>
+</table>
+
+<div id="testList"><div class="overflow">
+<table id="testListTable">
+ <tr>
+  <th style="width:16px" data-name="status"></th>
+  <th style="min-width:250px;" data-type="text" data-name="name" onclick="SortTestList('testListTable', this)" onmouseover="listColumnMouseOver(this, true)" onmouseout="listColumnMouseOver(this, false)">Test Case</th>
+  <th style="min-width:150px;" data-type="text" data-name="project" onclick="SortTestList('testListTable', this)" onmouseover="listColumnMouseOver(this, true)" onmouseout="listColumnMouseOver(this, false)">Project</th>
+  <th style="min-width:150px;" data-type="datetime" data-name="startTime" onclick="SortTestList('testListTable', this)" onmouseover="listColumnMouseOver(this, true)" onmouseout="listColumnMouseOver(this, false)">Start Time</th>
+  <th style="min-width:80px; width:calc(100vw - 1050px);" data-type="numeric" data-name="duration" onclick="SortTestList('testListTable', this)" onmouseover="listColumnMouseOver(this, true)" onmouseout="listColumnMouseOver(this, false)">Duration</th>
+ </tr>
+</table>
+</div></div>
+
+<script>
+  ShowHide('GeneralResults');
+  
+  window.setTimeout(windowResized, 100);
+  
+  if (data && data.summary)
+  {
+    if (data.summary.title)
+    {
+      var td = document.getElementById("logTitle");
+      if (td) td.innerHTML = data.summary.title;
+    }
+
+    var chartData = [
+      { "value": data.summary.testsWarnings,    "color": "#ffe300" },
+      { "value": data.summary.testsFailed,      "color": "#ce1126" },
+      { "value": data.summary.testsIncompleted, "color": "#8d8d8d" },
+      { "value": data.summary.testsPassed,      "color": "#0eb300" }
+    ];
+    var chart = new PieChart("idChart", chartData, { "zoom": 0.73, "marginLeft": -54, "marginTop": -20 });
+
+    var items = document.querySelectorAll("#executionSummary span.data");
+    if (items && items.length > 4)
+    {
+      items[0].innerHTML = data.summary.testsExecuted;
+      items[1].innerHTML = data.summary.testsFailed   + ((data.summary.testsFailed   > 0) ? " <span class='print_only'>(" + Math.round(data.summary.testsFailed   * 100 / data.summary.testsExecuted) + "%)</span>" : "");
+      items[2].innerHTML = data.summary.testsWarnings + ((data.summary.testsWarnings > 0) ? " <span class='print_only'>(" + Math.round(data.summary.testsWarnings * 100 / data.summary.testsExecuted) + "%)</span>" : "");
+      items[3].innerHTML = data.summary.testsPassed   + ((data.summary.testsPassed   > 0) ? " <span class='print_only'>(" + Math.round(data.summary.testsPassed   * 100 / data.summary.testsExecuted) + "%)</span>" : "");
+      if (data.summary.testsIncompleted) items[4].innerHTML = data.summary.testsIncompleted; else items[4].parentNode.style.display = "none";
+    }
+	
+    if ((data.summary.status == 1 && data.summary.testsWarnings == 0) ||
+        (data.summary.status == 2 && data.summary.testsFailed == 0))
+    {
+      var obj = document.getElementById("logStatusTable");
+      if (obj) obj.className = "status_" + data.summary.status;
+      obj = document.getElementById("logStatusImage");
+      if (obj) { obj.src = null_image; obj.className = "status_" + data.summary.status; }
+      obj = document.getElementById("logStatusText");
+      if (obj) obj.innerHTML = "There are " + status_items[data.summary.status] + " in the <a href='" + data.summary.logLink + "'>Log Details</a>";
+
+      obj = document.getElementById("idChart");
+      if (obj) obj.style.marginBottom = "8px";
+      obj = document.getElementById("logTitleTable");
+      if (obj) obj.style.marginTop = "0px";
+    }
+
+    items = document.querySelectorAll(".tab_icon_text span");
+    if (items && items.length > 4)
+    {
+      items[0].innerHTML = data.summary.testsExecuted;
+      items[1].outerHTML = (data.summary.testsFailed   > 0) ? "<span class='bold'>" + data.summary.testsFailed   + "</span> <span class='grayed'>(" + Math.round(data.summary.testsFailed   * 100 / data.summary.testsExecuted) + "%)</span>" : data.summary.testsFailed;
+      items[2].outerHTML = (data.summary.testsWarnings > 0) ? "<span class='bold'>" + data.summary.testsWarnings + "</span> <span class='grayed'>(" + Math.round(data.summary.testsWarnings * 100 / data.summary.testsExecuted) + "%)</span>" : data.summary.testsWarnings;
+      items[3].outerHTML = (data.summary.testsPassed   > 0) ? "<span class='bold'>" + data.summary.testsPassed   + "</span> <span class='grayed'>(" + Math.round(data.summary.testsPassed   * 100 / data.summary.testsExecuted) + "%)</span>" : data.summary.testsPassed;
+      if (data.summary.testsIncompleted)
+        items[4].outerHTML = "<span class='bold'>" + data.summary.testsIncompleted + "</span>";
+    }
+    
+    items = document.querySelectorAll(".tab_icon");
+    if (items && items.length > 4)
+    {
+      items[0].src = null_image; items[0].className = "tab_icon pie_icon";
+      items[1].src = null_image; items[1].className = data.summary.testsFailed      ? "tab_icon status_2" : "tab_icon status_grayed_2";
+      items[2].src = null_image; items[2].className = data.summary.testsWarnings    ? "tab_icon status_1" : "tab_icon status_grayed_1";
+      items[3].src = null_image; items[3].className = data.summary.testsPassed      ? "tab_icon status_0" : "tab_icon status_grayed_0";
+      items[4].src = null_image; items[4].className = data.summary.testsIncompleted ? "tab_icon status_3" : "tab_icon status_grayed_3";
+    }
+
+    td = document.getElementById("execStartTime"); if (td) td.innerHTML = (new Date(data.summary.startTime)).toLocaleString();
+    td = document.getElementById("execStopTime");  if (td) td.innerHTML = (new Date(data.summary.stopTime)).toLocaleString();
+    td = document.getElementById("execDuration");  if (td) td.innerHTML = secondsToString(data.summary.duration);
+    td = document.getElementById("execUserName");  if (td) td.innerHTML = data.summary.userName;
+    td = document.getElementById("execHostName");  if (td) td.innerHTML = data.summary.hostName;
+
+    td = document.getElementById("retries_info_success");
+	if (td && (data.summary.testsPassedWithRetries > 0)) {
+	  td.innerHTML = data.summary.testsPassedWithRetries + ' after rerun';
+	  td.classList.remove("retries_info_hidden");
+    } else {
+	  td.classList.add("retries_info_hidden");
+    }
+	
+	td = document.getElementById("retries_info_warning");
+	if (td && (data.summary.testsWarningsWithRetries > 0)) {
+	  td.innerHTML = data.summary.testsWarningsWithRetries + ' after rerun';
+	  td.classList.remove("retries_info_hidden");
+    } else {
+	  td.classList.add("retries_info_hidden");
+    }
+	
+    var tabs = document.querySelectorAll(".tab_button");
+    if (tabs)
+    {
+      var active_tab_index = 0;
+      /*
+      if (data.summary.testsFailed == data.summary.testsExecuted)
+        active_tab_index = 1;
+      else if (data.summary.testsWarnings == data.summary.testsExecuted)
+        active_tab_index = 2;
+      else if (data.summary.testsPassed == data.summary.testsExecuted)
+        active_tab_index = 3;
+      */
+	  
+	  if (data.summary.testsPassedWithRetries > 0 || data.summary.testsWarningsWithRetries > 0) {
+	    for (var i = 0; i < tabs.length; i++) {
+		  tabs[i].classList.add("tab_button_expanded");
+		}
+	  }
+
+      if (data.summary.testsFailed == 0)
+        tabs[1].className += " tab_button_disabled";
+      if (data.summary.testsWarnings == 0)
+        tabs[2].className += " tab_button_disabled";
+      if (data.summary.testsPassed == 0)
+        tabs[3].className += " tab_button_disabled";
+
+      var show_unexecuted = false;
+      if (!data.summary.testsIncompleted)
+        tabs[4].className += " tab_button_hidden";
+      else if (data.summary.testsExecuted == 0 && tabs.length > 4)
+      {
+        show_unexecuted = true;
+        active_tab_index = 4;
+        tabs[0].className += " tab_button_disabled";
+      }
+
+      if (tabs.length > active_tab_index)
+        tabs[active_tab_index].className += " tab_button_active";
+    }
+  }
+
+  if (data.tests)
+    FillTestList("testListTable", data.tests, show_unexecuted);
+</script>
+
+</body>
+</html>

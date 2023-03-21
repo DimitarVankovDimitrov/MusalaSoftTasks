@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{42D2222C-ACA2-405F-8E67-05D5C42EB839}" version="2">
+	<data key="{1241D0C0-66A2-47E6-A2CE-24E6BA9C38EC}">
+		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="16" kind="0" dateTime="45002.7160648148" objectName="Aliases.browser.pageMusalaSoft.navCompany.textnodeMenuMainNav1.textnodeCareers.linkCareers" objectLeft="687" objectTop="153" objectRight="751" objectBottom="173" clickPointX="719" clickPointY="161" imageFileName="tcvi207953734149480.png" storageFileName="" needUpdate="False" rectColor="255" />
+		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="23" kind="0" dateTime="45002.7161342593" objectName="Aliases.browser.pageWwwMusalaComCareersJoinUs.sectionFilterByLocation.selectGetLocation" objectLeft="944" objectTop="628" objectRight="1212" objectBottom="662" clickPointX="-1921" clickPointY="-54" imageFileName="tcvi207960031149485.png" storageFileName="" needUpdate="False" rectColor="255" />
+	</data>
+</Root>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{AA2F3067-5C9B-4CCF-89D4-1F93CE1C510F}" version="15.0">
+	<children>
+		<child name="Configuration_csv" key="{4A417F7E-C25D-418B-A0AF-BFF39DC8FD7E}">
+			<data signature="{FC92F8D9-8A57-4D74-B8B4-479AA50BF647}" version="15.0" caption="Configuration_csv" ID="{4A417F7E-C25D-418B-A0AF-BFF39DC8FD7E}" FileName="Files\Configuration.csv" Update="True" />
+		</child>
+		<child name="ContactUS_TestCases_csv" key="{27AA383A-600B-4C39-8D3A-8DF17ADAA4B3}">
+			<data signature="{FC92F8D9-8A57-4D74-B8B4-479AA50BF647}" version="15.0" caption="ContactUS_TestCases_csv" ID="{27AA383A-600B-4C39-8D3A-8DF17ADAA4B3}" FileName="Files\ContactUS_TestCases.csv" Update="True" />
+		</child>
+		<child name="CV_docx" key="{CE057EDF-26DA-4AA4-A1CD-5ABE9F708557}">
+			<data signature="{FC92F8D9-8A57-4D74-B8B4-479AA50BF647}" version="15.0" caption="CV_docx" ID="{CE057EDF-26DA-4AA4-A1CD-5ABE9F708557}" FileName="Files\CV.docx" Update="True" />
+		</child>
+	</children>
+</Root>

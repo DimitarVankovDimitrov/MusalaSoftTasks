@@ -1,0 +1,1737 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root Signature="{5DCBAC3B-D39C-497C-9BE8-744CBADD37AA}" NameMappingVersion="7" SaveImages="0">
+	<Storages Current="0">
+		<Child Name="Default Configuration" />
+	</Storages>
+	<Nodes Name="NameMapping" Key="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}">
+		<Children>
+			<Child Name="Sys" Key="{8C5C1048-315B-45F9-900D-1F8D6881ADFD}">
+				<TypeInfo Item0="{A63B0547-0C53-490B-9405-06194244E717}" />
+				<Properties>
+					<Property Name="Name">
+						<Value Value="Sys" />
+					</Property>
+				</Properties>
+				<Children>
+					<Child Name="browser" Key="{1B3C47DC-BC12-4638-A9FF-4039EBA34F45}">
+						<TypeInfo Item0="{7AEA6E60-1B37-4281-972A-FF4A75B085EF}" />
+						<Properties>
+							<Property Name="ObjectType">
+								<Value Value="Browser" />
+							</Property>
+						</Properties>
+						<Children>
+							<Child Name="pageMusalaSoft" Key="{189E1979-1F21-4801-87F5-18FBFFE88B8D}">
+								<Image FileName="-498635617" Left="8" Top="111" Right="1928" Bottom="1048" />
+								<TypeInfo Item0="{F58CF4D3-A1AA-4F03-B9B0-71F1A57B398E}" />
+								<Properties>
+									<Property Name="ObjectType">
+										<Value Value="Page" />
+									</Property>
+									<Property Name="URL">
+										<Value Value="https://www.musala.com/" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="formContactForm" Key="{E19F810C-0538-44FF-9A98-F15ADF55B0A4}">
+										<Image FileName="-498635617" Left="629" Top="167" Right="1229" Bottom="930" />
+										<TypeInfo Item0="{818777AD-1BAB-493B-80DE-C75395F9D1AA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//form[contains(., &apos;Contact Us&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//form[contains(@class, &apos;wpcf7-form&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;wpcf7-f875-o1&apos;]/form" />
+											</Selector>
+											<Selector>
+												<Value Value="//form" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeTheEMailAddressEnteredIs" Key="{C5D9C890-C3DE-4EB3-9871-558F74055390}">
+										<Image FileName="-498635617" Left="629" Top="353" Right="1229" Bottom="367" />
+										<TypeInfo Item0="{818777AD-1BAB-493B-80DE-C75395F9D1AA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[contains(@class, &apos;wpcf7-not-valid-tip&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;wpcf7-f875-o1&apos;]//span/span" />
+											</Selector>
+											<Selector>
+												<Value Value="//p[2]/span/span" />
+											</Selector>
+											<Selector>
+												<Value Value="xpath=//span[text()=&apos;*" Enabled="False" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelOneOrMoreFieldsHaveAn" Key="{0215F354-773F-42AE-8258-3F9832B8D7FF}">
+										<Image FileName="1155910211" Left="629" Top="950" Right="1229" Bottom="979" />
+										<TypeInfo Item0="{818777AD-1BAB-493B-80DE-C75395F9D1AA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[.=&apos;One or more fields have an error. Please check and try again.&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[contains(@class, &apos;wpcf7-response-output&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="buttonContactUs" Key="{5DF9AEBE-936B-47DC-8B56-C031E3A64A57}">
+										<Image FileName="970978586" Left="1272" Top="525" Right="1552" Bottom="575" />
+										<TypeInfo Item0="{5392E882-6EBF-4E6F-A951-B17384A179D1}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//button[.=&apos;Contact us&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div/div/div/a/button[@type=&apos;button&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//button[contains(@class, &apos;contact-label&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div/div/div/a/button" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="sectionContacts" Key="{3FB5E268-F9D8-48B0-B432-653B6F0ECC4C}">
+										<Image FileName="970978586" Left="0" Top="465" Right="1903" Bottom="982" />
+										<Selectors>
+											<Selector>
+												<Value Value="//section[contains(., &apos;Contacts&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//section[contains(@class, &apos;contacts&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="linkContactUs" Key="{69FE6A69-5F1C-4E31-A0E0-A26E4A17C5E5}">
+										<Image FileName="970978586" Left="1247" Top="525" Right="1552" Bottom="575" />
+										<Selectors>
+											<Selector>
+												<Value Value="//a[.=&apos;Contact us&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//a[contains(@class, &apos;fancybox&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//section[2]/div/div/div/a" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textboxName" Key="{65953A42-9078-49F2-9733-6EA5F032734B}">
+										<Image FileName="-1585333743" Left="621" Top="232" Right="1219" Bottom="273" />
+										<TypeInfo Item0="{B450E7E3-83ED-428F-B589-28FE6B516DB5}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//input[@id=(//label[.=&apos;Name*&apos;]/@for)]" />
+											</Selector>
+											<Selector>
+												<Value Value="#cf-1" />
+											</Selector>
+											<Selector>
+												<Value Value="//input[@name=&apos;your-name&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//form/p//input" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="emailinputEmail" Key="{D234F23B-A4E6-4961-B197-3B7791101139}">
+										<Image FileName="2134710804" Left="621" Top="314" Right="1219" Bottom="355" />
+										<TypeInfo Item0="{9F55C722-A2A8-4F2A-BDD8-F3F308B44958}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//input[@id=(//label[.=&apos;Email*&apos;]/@for)]" />
+											</Selector>
+											<Selector>
+												<Value Value="#cf-2" />
+											</Selector>
+											<Selector>
+												<Value Value="//input[@name=&apos;your-email&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//form/p[2]//input" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="phoneinputMobile" Key="{A1E081C0-ADC1-4E7D-8F95-F2B0B7ED5BC6}">
+										<Image FileName="614374097" Left="621" Top="395" Right="1219" Bottom="436" />
+										<TypeInfo Item0="{9F55C722-A2A8-4F2A-BDD8-F3F308B44958}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//input[@id=(//label[.=&apos;Mobile&apos;]/@for)]" />
+											</Selector>
+											<Selector>
+												<Value Value="#cf-3" />
+											</Selector>
+											<Selector>
+												<Value Value="//input[@name=&apos;mobile-number&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//form/p[3]//input" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textboxSubject" Key="{F7B09B05-4397-4DAA-9AC5-285DEBD9CC37}">
+										<Image FileName="703765850" Left="621" Top="477" Right="1219" Bottom="518" />
+										<TypeInfo Item0="{B450E7E3-83ED-428F-B589-28FE6B516DB5}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//input[@id=(//label[.=&apos;Subject*&apos;]/@for)]" />
+											</Selector>
+											<Selector>
+												<Value Value="#cf-4" />
+											</Selector>
+											<Selector>
+												<Value Value="//input[@name=&apos;your-subject&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//form/p[4]//input" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textareaYourMessage" Key="{754E6EFD-8600-47D9-9311-1B5980CD0BAE}">
+										<Image FileName="757092409" Left="621" Top="559" Right="1219" Bottom="661" />
+										<TypeInfo Item0="{9F55C722-A2A8-4F2A-BDD8-F3F308B44958}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//textarea[@id=(//label[.=&apos;Your Message*&apos;]/@for)]" />
+											</Selector>
+											<Selector>
+												<Value Value="#cf-5" />
+											</Selector>
+											<Selector>
+												<Value Value="//form/p//textarea" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textboxEnterCode" Key="{9EDA64D0-2350-4046-9195-683B35428A24}">
+										<Image FileName="654911651" Left="725" Top="790" Right="835" Bottom="815" />
+										<TypeInfo Item0="{B450E7E3-83ED-428F-B589-28FE6B516DB5}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//input[@id=(//label[.=&apos;Enter code *&apos;]/@for)]" />
+											</Selector>
+											<Selector>
+												<Value Value="#siwp_captcha_value_0" />
+											</Selector>
+											<Selector>
+												<Value Value="//input[@name=&apos;siwp_captcha_value&apos;]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="submitbuttonSend" Key="{1735C9D5-303C-47B5-9E3E-D4BF7F907A2E}">
+										<Image FileName="1297218022" Left="621" Top="848" Right="1223" Bottom="894" />
+										<TypeInfo Item0="{5392E882-6EBF-4E6F-A951-B17384A179D1}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//input[@value=&apos;Send&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//input[@type=&apos;submit&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//p/input[contains(@class, &apos;wpcf7-form-control&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;wpcf7-f875-o1&apos;]//p/input" />
+											</Selector>
+											<Selector>
+												<Value Value="//p/input" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelContactFormPop" Key="{C3C4B8C0-12EB-42FD-ACEB-908EBB86F60C}">
+										<Image FileName="-672406255" Left="609" Top="147" Right="1249" Bottom="951" />
+										<TypeInfo Item0="{818777AD-1BAB-493B-80DE-C75395F9D1AA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="#contact_form_pop" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[contains(@class, &apos;popup_form&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;fancybox-outer&apos;]//div/div/div" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="navCompany" Key="{66BBA110-C81C-4F61-865C-47E993C12087}">
+										<Image FileName="-532678452" Left="187" Top="103" Right="1717" Bottom="223" />
+										<Selectors>
+											<Selector>
+												<Value Value="//header/nav[2]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeMenuMainNav1" Key="{6181302C-B87E-4282-B2C8-5A23738F3D93}">
+										<Image FileName="-532678452" Left="368" Top="103" Right="953" Bottom="103" />
+										<Selectors>
+											<Selector>
+												<Value Value="//nav[2]/div/div/ul[contains(@class, &apos;nav&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;menu&apos;]/ul" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeCompany" Key="{69742C22-F886-4C6C-A018-B3F60346D524}">
+										<Image FileName="-532678452" Left="368" Top="103" Right="554" Bottom="223" />
+										<Selectors>
+											<Selector>
+												<Value Value="//nav[2]/div/div/ul/li[contains(@class, &apos;menu-item&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//nav[2]/div/div/ul/li" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="linkCompany" Key="{64E5371F-E33B-4260-8F97-6CBC8B6E44EE}">
+										<Image FileName="-532678452" Left="468" Top="153" Right="539" Bottom="173" />
+										<TypeInfo Item0="{9F55C722-A2A8-4F2A-BDD8-F3F308B44958}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//nav[2]/div/div/ul/li/a[contains(@class, &apos;main-link&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;menu&apos;]//ul/li/a" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;menu&apos;]/ul/li/a" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeCareers" Key="{48C3AECE-99F4-4892-B658-197CC57C0FE6}">
+										<Image FileName="1709707858" Left="858" Top="103" Right="952" Bottom="223" />
+										<Selectors>
+											<Selector>
+												<Value Value="//nav[2]/div/div/ul/li[contains(@class, &apos;menu-item-478&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="linkCareers" Key="{DE75B5AB-658B-4EF8-B71C-611207490AE9}">
+										<Image FileName="1709707858" Left="873" Top="153" Right="937" Bottom="173" />
+										<TypeInfo Item0="{9F55C722-A2A8-4F2A-BDD8-F3F308B44958}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//nav[2]/div/div/ul/li[5]/a[contains(@class, &apos;main-link&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;menu&apos;]/ul/li[5]/a" />
+											</Selector>
+										</Selectors>
+									</Child>
+								</Children>
+							</Child>
+							<Child Name="BrowserWindow" Key="{B7128463-EB41-4DE1-8067-D01843E43BA3}">
+								<Properties>
+									<Property Name="ObjectType">
+										<Value Value="BrowserWindow" />
+									</Property>
+									<Property Name="ObjectIdentifier">
+										<Value Value="0" Type="0" />
+									</Property>
+								</Properties>
+							</Child>
+							<Child Name="BrowserWindow2" Key="{D9AB8ED3-1581-4458-B2AE-16A8F398806C}">
+								<Image FileName="2064281196" Left="-8" Top="-8" Right="1928" Bottom="1048" />
+								<TypeInfo Item0="{1DC9C9B2-02E9-4146-805F-766FF44BD659}" />
+								<Properties>
+									<Property Name="ObjectType">
+										<Value Value="BrowserWindow" />
+									</Property>
+									<Property Name="ObjectIdentifier">
+										<Value Value="1" Type="0" />
+									</Property>
+								</Properties>
+							</Child>
+							<Child Name="pageWwwMusalaComCompany" Key="{2A412929-F9AD-451C-8005-EDEFC08F4405}">
+								<Image FileName="778045646" Left="8" Top="111" Right="1928" Bottom="1048" />
+								<TypeInfo Item0="{F58CF4D3-A1AA-4F03-B9B0-71F1A57B398E}" />
+								<Properties>
+									<Property Name="ObjectType">
+										<Value Value="Page" />
+									</Property>
+									<Property Name="URL">
+										<Value Value="https://www.musala.com/company/" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="sectionLeadership" Key="{80D6E460-4DD9-4C8B-A053-1FC5B7A2BB38}">
+										<Image FileName="778045646" Left="8" Top="385" Right="1911" Bottom="963" />
+										<TypeInfo Item0="{818777AD-1BAB-493B-80DE-C75395F9D1AA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//section[contains(., &apos;Stanislav Ovcharov&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//section[contains(@class, &apos;company-members&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="footerContactUs" Key="{86256CE3-30BF-482B-9889-5319DE7948E6}">
+										<Image FileName="1047575433" Left="0" Top="955" Right="1903" Bottom="1040" />
+										<Selectors>
+											<Selector>
+												<Value Value="footer[contains(., &apos;Contact us&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="footer[contains(@class, &apos;footer-links&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="footer" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="link_FB" Key="{D28C3333-2B31-4B7C-9409-B2D5EB522B26}" Description="link to facebook">
+										<Image FileName="1047575433" Left="1102" Top="972" Right="1152" Bottom="1022" />
+										<TypeInfo Item0="{9F55C722-A2A8-4F2A-BDD8-F3F308B44958}" />
+										<Selectors>
+											<Selector>
+												<Value Value="xpath=//a[4]/span[contains(@class, &apos;musala&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="xpath=//a[contains(@href, &apos;MusalaSoft&apos;)]/span" />
+											</Selector>
+											<Selector>
+												<Value Value="xpath=//a[4]/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="headerCompany" Key="{34D2F7FA-A2EA-423E-BB00-DF1DFB6A3909}">
+										<Image FileName="-2106966846" Left="8" Top="111" Right="1911" Bottom="231" />
+										<TypeInfo Item0="{818777AD-1BAB-493B-80DE-C75395F9D1AA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="header[contains(., &apos;Company&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="header[contains(@class, &apos;white-top&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="header" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="sectionIn2000WeFoundedMusalaSoft" Key="{AECABC97-8ADB-4932-B212-3A329C071E98}">
+										<Image FileName="-1855408788" Left="8" Top="112" Right="1911" Bottom="1018" />
+										<TypeInfo Item0="{818777AD-1BAB-493B-80DE-C75395F9D1AA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//section[contains(., &apos;In 2000 we founded Musala Soft&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//section[contains(@class, &apos;section1&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+								</Children>
+							</Child>
+							<Child Name="page1MusalaSoftFacebook" Key="{F44F01BD-B8EF-488C-8E08-B4CA863D25AB}">
+								<Image FileName="1719345158" Left="8" Top="111" Right="1928" Bottom="1048" />
+								<TypeInfo Item0="{F58CF4D3-A1AA-4F03-B9B0-71F1A57B398E}" />
+								<Properties>
+									<Property Name="ObjectType">
+										<Value Value="Page" />
+									</Property>
+									<Property Name="URL">
+										<Value Value="https://www.facebook.com/MusalaSoft*" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="textnode" Key="{B3C959CF-E683-4730-A9EC-3B08E24A2F94}">
+										<Image FileName="1719345158" Left="373" Top="306" Right="501" Bottom="434" />
+										<TypeInfo Item0="{818777AD-1BAB-493B-80DE-C75395F9D1AA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[@role=&apos;main&apos;]//*[name()=&apos;svg&apos;]/*[name()=&apos;g&apos;]/*[name()=&apos;circle&apos;][contains(@class, &apos;x1p5r69i&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panel" Key="{5F926AD6-DC12-4882-A014-2573FE15EEF9}">
+										<Image FileName="1713109207" Left="8" Top="167" Right="1911" Bottom="630" />
+										<TypeInfo Item0="{818777AD-1BAB-493B-80DE-C75395F9D1AA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[contains(@class, &apos;xyuz3pd&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+								</Children>
+							</Child>
+							<Child Name="pageWwwMusalaComCareers" Key="{0C2B06B1-03DA-4050-BB8D-42616266A86F}">
+								<Image FileName="535481789" Left="8" Top="111" Right="1928" Bottom="1048" />
+								<TypeInfo Item0="{F58CF4D3-A1AA-4F03-B9B0-71F1A57B398E}" />
+								<Properties>
+									<Property Name="ObjectType">
+										<Value Value="Page" />
+									</Property>
+									<Property Name="URL">
+										<Value Value="https://www.musala.com/careers/" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="headerCompany" Key="{CA30BA56-1BED-4C74-8422-6EE9489D7C89}">
+										<Image FileName="535481789" Left="8" Top="111" Right="1911" Bottom="231" />
+										<TypeInfo Item0="{818777AD-1BAB-493B-80DE-C75395F9D1AA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="header[contains(., &apos;Company&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="header[contains(@class, &apos;white-top&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="header" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="sectionCheckOurOpenPositions" Key="{F5777076-A990-49B6-8414-8E6BE4948057}">
+										<Image FileName="1524618589" Left="273" Top="474" Right="773" Bottom="524" />
+										<Selectors>
+											<Selector>
+												<Value Value="//section[contains(., &apos;Check our open positions&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//section[contains(@class, &apos;link_field&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;content&apos;]//div/div/section" />
+											</Selector>
+											<Selector>
+												<Value Value="//div/section" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="buttonCheckOurOpenPositions" Key="{30713315-1DCF-425D-BB07-7B4AF4F7CCB3}">
+										<Image FileName="1524618589" Left="273" Top="474" Right="562" Bottom="524" />
+										<TypeInfo Item0="{5392E882-6EBF-4E6F-A951-B17384A179D1}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//button[.=&apos;Check our open positions&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@role=&apos;main&apos;]//section//a/button[@type=&apos;button&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@role=&apos;main&apos;]//section//a/button[contains(@class, &apos;contact-label&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;content&apos;]//button" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@role=&apos;main&apos;]//section//a/button" />
+											</Selector>
+										</Selectors>
+									</Child>
+								</Children>
+							</Child>
+							<Child Name="pageWwwMusalaComCareersJoinUs" Key="{8D5FAA28-F41D-42EC-976D-5475EDB712FE}">
+								<Image FileName="-1184898794" Left="8" Top="111" Right="1928" Bottom="1048" />
+								<TypeInfo Item0="{F58CF4D3-A1AA-4F03-B9B0-71F1A57B398E}" />
+								<Properties>
+									<Property Name="ObjectType">
+										<Value Value="Page" />
+									</Property>
+									<Property Name="URL">
+										<Value Value="https://www.musala.com/careers/join-us/*" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="headerCompany" Key="{DCFE0398-A522-4FD5-9BD1-0C92D047A458}">
+										<Image FileName="-1184898794" Left="8" Top="111" Right="1911" Bottom="231" />
+										<TypeInfo Item0="{818777AD-1BAB-493B-80DE-C75395F9D1AA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="header[contains(., &apos;Company&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="header[contains(@class, &apos;white-top&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="header" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="sectionFilterByLocation" Key="{411EFB3C-23C2-4AA8-A912-7B96F9757C64}">
+										<Image FileName="-1277234370" Left="0" Top="788" Right="1903" Bottom="2642" />
+										<Selectors>
+											<Selector>
+												<Value Value="//section[contains(., &apos;Filter by location&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//section[contains(@class, &apos;join-us&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;content&apos;]/section" />
+											</Selector>
+											<Selector>
+												<Value Value="//section" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="selectGetLocation" Key="{E5C769DB-B25D-4A38-8954-8C07D941ABEC}">
+										<Image FileName="-1277234370" Left="1264" Top="818" Right="1532" Bottom="852" />
+										<TypeInfo Item0="{15AD68FB-C7EE-4FA7-A590-F03A90E06B5C}" />
+										<Selectors>
+											<Selector>
+												<Value Value="#get_location" />
+											</Selector>
+											<Selector>
+												<Value Value="//select[@name=&apos;get_location&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;content&apos;]//select" />
+											</Selector>
+											<Selector>
+												<Value Value="//select" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="articleSeniorJavaDeveloper" Key="{0AEFEC82-2E22-4793-97B2-BF5EE1372993}">
+										<Image FileName="-1536011955" Left="349" Top="492" Right="729" Bottom="722" />
+										<Selectors>
+											<Selector>
+												<Value Value="//article[contains(., &apos;Senior Java Developer&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="imageJoinUs" Key="{F703A188-41E1-4453-9FB4-A53C93E63019}">
+										<Image FileName="-1010658593" Left="8" Top="231" Right="1271" Bottom="606" />
+										<TypeInfo Item0="{818777AD-1BAB-493B-80DE-C75395F9D1AA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//img[contains(@src, &apos;join_us_from_anywhere_header.jpg&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;primary&apos;]//div[@role=&apos;main&apos;]/div/div/img" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@role=&apos;main&apos;]/div/div/img" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="articleDevopsEngineer" Key="{5D9C012D-43C2-45EE-B899-E868EF36E155}">
+										<Image FileName="-1424863884" Left="441" Top="510" Right="821" Bottom="740" />
+										<TypeInfo Item0="{818777AD-1BAB-493B-80DE-C75395F9D1AA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="xpath=//article[contains(., &apos;*" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelDevopsEngineer" Key="{A88C8FD3-9A6D-40D9-B8A0-4AE1271E3EB2}">
+										<Image FileName="777117214" Left="441" Top="510" Right="821" Bottom="740" />
+										<TypeInfo Item0="{818777AD-1BAB-493B-80DE-C75395F9D1AA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[@role=&apos;main&apos;]/section//article[2]//a//div[contains(@class, &apos;front&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;content&apos;]//article[2]/div/a/div/div" />
+											</Selector>
+											<Selector>
+												<Value Value="//article[2]/div/a/div/div" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="linkDevopsEngineer" Key="{9C8C7DB7-C0BB-4242-8CA1-C0FE1817C154}">
+										<Image FileName="777117214" Left="441" Top="510" Right="821" Bottom="740" />
+										<TypeInfo Item0="{4C52A5F2-87B9-4D96-B124-1CA1D5C81826}" />
+										<Selectors>
+											<Selector>
+												<Value Value="xpath=//article[%Count%]/div/a" />
+											</Selector>
+											<Selector>
+												<Value Value="//a[contains(., &apos;DevOps Engineer&apos;)]" Enabled="False" />
+											</Selector>
+											<Selector>
+												<Value Value="//article[2]/div/a[contains(@class, &apos;card-jobsHot__link&apos;)]" Enabled="False" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;content&apos;]//article[2]/div/a" Enabled="False" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelSeniorJavaDeveloper" Key="{E86DFC9C-F718-4970-82E5-B67BE848CFEA}">
+										<Image FileName="-1546220646" Left="357" Top="465" Right="737" Bottom="695" />
+										<TypeInfo Item0="{818777AD-1BAB-493B-80DE-C75395F9D1AA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[@role=&apos;main&apos;]/section//article//a//div[contains(@class, &apos;front&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//a/div/div" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="imageSeniorJavaDeveloper" Key="{41B3DC47-DFF5-4211-8A67-9C5640489C03}">
+										<Image FileName="1447687130" Left="349" Top="492" Right="729" Bottom="722" />
+										<TypeInfo Item0="{9F55C722-A2A8-4F2A-BDD8-F3F308B44958}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//img[contains(@src, &apos;06_450x270.jpg&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//a[contains(@href, &apos;senior-java-developer&apos;)]//div[2]/img" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@role=&apos;main&apos;]/section//article//a//div[2]/img" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="linkSeniorJavaDeveloper" Key="{17CA3A93-DCCE-443F-90E4-6DF2BD6442E5}">
+										<Image FileName="1447687130" Left="349" Top="492" Right="729" Bottom="722" />
+										<Selectors>
+											<Selector>
+												<Value Value="xpath=//article[1]/div/a" />
+											</Selector>
+											<Selector>
+												<Value Value="//a[contains(., &apos;Senior Java Developer&apos;)]" Enabled="False" />
+											</Selector>
+											<Selector>
+												<Value Value="//article/div/a[contains(@class, &apos;card-jobsHot__link&apos;)]" Enabled="False" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;content&apos;]//article/div/a" Enabled="False" />
+											</Selector>
+										</Selectors>
+									</Child>
+								</Children>
+							</Child>
+							<Child Name="pageWwwMusalaComJobSeniorJavaDev" Key="{4DA4E9F0-33B2-4EA4-9122-50205C1550FD}">
+								<Image FileName="-996457005" Left="8" Top="111" Right="1928" Bottom="1048" />
+								<TypeInfo Item0="{F58CF4D3-A1AA-4F03-B9B0-71F1A57B398E}" />
+								<Properties>
+									<Property Name="ObjectType">
+										<Value Value="Page" />
+									</Property>
+									<Property Name="URL">
+										<Value Value="https://www.musala.com/job/senior-java-developer/" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="articleSeniorJavaDeveloper" Key="{F905095E-2E87-4E03-AED3-1945A9E2EBEB}">
+										<Image FileName="-996457005" Left="8" Top="-136" Right="1911" Bottom="1472" />
+										<TypeInfo Item0="{818777AD-1BAB-493B-80DE-C75395F9D1AA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//article[contains(., &apos;Senior Java Developer&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//article[contains(@class, &apos;post-5397&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;content&apos;]//article" />
+											</Selector>
+											<Selector>
+												<Value Value="//article" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelGeneralDescription" Key="{F463426F-E05B-49EA-A414-6E69A153156C}">
+										<Image FileName="-996457005" Left="345" Top="423" Right="960" Bottom="858" />
+										<TypeInfo Item0="{818777AD-1BAB-493B-80DE-C75395F9D1AA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[@role=&apos;main&apos;]/section/article//div/div[contains(@class, &apos;pull-right&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelRequirements" Key="{6A494931-8073-4980-887B-50F0E16C5789}">
+										<Image FileName="-902118968" Left="960" Top="423" Right="1575" Bottom="858" />
+										<TypeInfo Item0="{818777AD-1BAB-493B-80DE-C75395F9D1AA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[@role=&apos;main&apos;]/section/article//div/div[contains(@class, &apos;pull-left&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelResponsibilities" Key="{8E4FCAEB-A406-40FE-9E2B-34D54F973B23}">
+										<Image FileName="-221991516" Left="345" Top="383" Right="960" Bottom="878" />
+										<TypeInfo Item0="{818777AD-1BAB-493B-80DE-C75395F9D1AA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[@role=&apos;main&apos;]/section/article//div[2]/div[contains(@class, &apos;pull-right&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelWhatWeOffer" Key="{9BE77FD0-B7C9-4F65-B845-0D1DB5F5FC02}">
+										<Image FileName="-2006322410" Left="960" Top="383" Right="1575" Bottom="878" />
+										<TypeInfo Item0="{818777AD-1BAB-493B-80DE-C75395F9D1AA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[@role=&apos;main&apos;]/section/article//div[2]/div[contains(@class, &apos;pull-left&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="link" Key="{367AD7CB-7E8D-4D94-BD19-659780638CB2}">
+										<Image FileName="-1908990345" Left="345" Top="878" Right="345" Bottom="878" />
+										<TypeInfo Item0="{4C52A5F2-87B9-4D96-B124-1CA1D5C81826}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//a[contains(@class, &apos;fancybox&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;content&apos;]//div/div/div/a" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@role=&apos;main&apos;]/section/article/div/div/div/a" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="buttonApply" Key="{6E3D5D6D-2A56-4493-9693-2998554421E4}">
+										<Image FileName="-1908990345" Left="1367" Top="908" Right="1564" Bottom="940" />
+										<TypeInfo Item0="{DD682320-A41D-48D1-896C-CE43F29C7112}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//input[@value=&apos;Apply&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//input[@type=&apos;button&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@role=&apos;main&apos;]/section/article//a/input[contains(@class, &apos;wpcf7-form-control&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//a/input" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@role=&apos;main&apos;]/section/article//a/input" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="formContactForm" Key="{4844E5F6-8D70-4D58-A628-2ADC26E2190B}">
+										<Image FileName="-1656247638" Left="629" Top="111" Right="1229" Bottom="1011" />
+										<TypeInfo Item0="{818777AD-1BAB-493B-80DE-C75395F9D1AA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//form[contains(., &apos;Apply for:&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//form[contains(@action, &apos;senior-java-developer&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//form[contains(@class, &apos;wpcf7-form&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;wpcf7-f880-o1&apos;]/form" />
+											</Selector>
+											<Selector>
+												<Value Value="//form" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelOneOrMoreFieldsHaveAn" Key="{C290C351-C839-4B1B-B9EF-5B081CB03066}">
+										<Image FileName="-1656247638" Left="666" Top="529" Right="1192" Bottom="558" />
+										<TypeInfo Item0="{818777AD-1BAB-493B-80DE-C75395F9D1AA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[.=&apos;One or more fields have an error. Please check and try again.&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[contains(@class, &apos;wpcf7-response-output&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;wpcf7-f880-o1&apos;]//div/div/div" />
+											</Selector>
+											<Selector>
+												<Value Value="//form/div/div/div" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelOneOrMoreFieldsHaveAn2" Key="{99B60716-6255-4A41-8ABD-F2BC7EE666E3}">
+										<Image FileName="-281426341" Left="666" Top="529" Right="1192" Bottom="558" />
+										<TypeInfo Item0="{818777AD-1BAB-493B-80DE-C75395F9D1AA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[.=&apos;One or more fields have an error. Please check and try again.&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[contains(@class, &apos;wpcf7-response-output&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;wpcf7-f880-o1&apos;]//div/div/div" />
+											</Selector>
+											<Selector>
+												<Value Value="//form/div/div/div" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeYouAreNotAllowedToUpload" Key="{453CB1D8-A3D8-46DB-9E3C-1ED2C5DCAA87}">
+										<Image FileName="-808832129" Left="629" Top="517" Right="1229" Bottom="531" />
+										<TypeInfo Item0="{818777AD-1BAB-493B-80DE-C75395F9D1AA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[text()=&apos;You are not allowed to upload files of this type.&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//form/div[2]/p//span[contains(@class, &apos;wpcf7-not-valid-tip&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;wpcf7-f880-o1&apos;]//div[2]/p/span/span" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[2]/p/span/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeTheFieldIsRequired" Key="{892D3E69-0701-4C69-A611-F22F66C045F7}">
+										<Image FileName="-214425874" Left="629" Top="770" Right="1229" Bottom="785" />
+										<TypeInfo Item0="{818777AD-1BAB-493B-80DE-C75395F9D1AA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//p[6]/span[contains(@class, &apos;wpcf7-form-control-wrap&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;wpcf7-f880-o1&apos;]//p[6]/span" />
+											</Selector>
+											<Selector>
+												<Value Value="//p[6]/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeTheFieldIsRequired2" Key="{715A3A6D-DF36-4252-A77F-8E9CDB029129}">
+										<Image FileName="-828649677" Left="629" Top="346" Right="1229" Bottom="360" />
+										<TypeInfo Item0="{818777AD-1BAB-493B-80DE-C75395F9D1AA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[text()=&apos;The field is required.&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//form/p[3]//span[contains(@class, &apos;wpcf7-not-valid-tip&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;wpcf7-f880-o1&apos;]//p[3]/span/span" />
+											</Selector>
+											<Selector>
+												<Value Value="//span/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeTheEMailAddressEnteredIs" Key="{5F17C2A8-F67A-491F-A07C-5561EB4DD23F}">
+										<Image FileName="-1973211454" Left="629" Top="346" Right="1229" Bottom="360" />
+										<TypeInfo Item0="{818777AD-1BAB-493B-80DE-C75395F9D1AA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[text()=&apos;The e-mail address entered is invalid.&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//form/p[3]//span[contains(@class, &apos;wpcf7-not-valid-tip&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;wpcf7-f880-o1&apos;]//p[3]/span/span" />
+											</Selector>
+											<Selector>
+												<Value Value="//span/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="checkboxAdconsentchx" Key="{C4882691-ECBF-4DC3-A28C-7289807DC2E5}">
+										<Image FileName="1317488212" Left="621" Top="787" Right="634" Bottom="800" />
+										<TypeInfo Item0="{93586B41-940F-4319-B04F-F3D76B7DD134}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//input[@id=(//label[contains(.,&apos;I agree that data provided by me is an act of personal decision and I accept that my personal data will be processed for the purpose of applying for the announced position in accordance with Regulation (EU) 2016/679. I consent that my data will be stored according to retention policy of Musala Soft. I acknowledge that data provided by me, can be sent to third party for job opportunity purposes. Consent&apos;)]/@for)]" />
+											</Selector>
+											<Selector>
+												<Value Value="#adConsentChx" />
+											</Selector>
+											<Selector>
+												<Value Value="//input[@name=&apos;adConsentChx&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//p/input" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="submitbuttonSend" Key="{ED624BCD-CCFB-4BBA-8D45-00FAF3181B94}">
+										<Image FileName="-1472082001" Left="621" Top="933" Right="1223" Bottom="979" />
+										<TypeInfo Item0="{5392E882-6EBF-4E6F-A951-B17384A179D1}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//input[@value=&apos;Send&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//input[@type=&apos;submit&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//p/input[contains(@class, &apos;wpcf7-form-control&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;wpcf7-f880-o1&apos;]//div[4]/p/input" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[4]/p/input" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="buttonClose" Key="{0B54C2D6-85CE-47DE-A6A6-9228124FDB66}">
+										<Image FileName="-62771486" Left="861" Top="580" Right="981" Bottom="615" />
+										<TypeInfo Item0="{5392E882-6EBF-4E6F-A951-B17384A179D1}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//button[.=&apos;Close&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//button[contains(@class, &apos;close-form&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;wpcf7-f880-o1&apos;]//button" />
+											</Selector>
+											<Selector>
+												<Value Value="//form//button" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textboxName" Key="{61648D47-ECF1-4DB0-B178-17BE35A3C6E1}">
+										<Image FileName="1488936471" Left="621" Top="235" Right="1219" Bottom="276" />
+										<TypeInfo Item0="{B450E7E3-83ED-428F-B589-28FE6B516DB5}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//input[@id=(//label[.=&apos;Name*&apos;]/@for)]" />
+											</Selector>
+											<Selector>
+												<Value Value="#cf-1" />
+											</Selector>
+											<Selector>
+												<Value Value="//input[@name=&apos;your-name&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//form/p[2]//input" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textboxMobile" Key="{3521AAF8-F6DE-4018-ACDB-67158D59BA30}">
+										<Image FileName="-418647966" Left="621" Top="378" Right="1219" Bottom="419" />
+										<TypeInfo Item0="{9F55C722-A2A8-4F2A-BDD8-F3F308B44958}" />
+										<Selectors>
+											<Selector>
+												<Value Value="xpath=//input[@id=(//label[.=&apos;Mobile*&apos;]/@for)]" />
+											</Selector>
+											<Selector>
+												<Value Value="css=#cf-3" />
+											</Selector>
+											<Selector>
+												<Value Value="xpath=//input[@name=&apos;mobile-number&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="xpath=//form/p[4]//input" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="fileUploadYourCv" Key="{D24D053A-54BC-4B8A-8FE1-C0B611D148CB}">
+										<Image FileName="-631101873" Left="621" Top="459" Right="1219" Bottom="519" />
+										<TypeInfo Item0="{9F55C722-A2A8-4F2A-BDD8-F3F308B44958}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//input[@id=(//label[.=&apos;Upload your CV&apos;]/@for)]" />
+											</Selector>
+											<Selector>
+												<Value Value="#cf-4" />
+											</Selector>
+											<Selector>
+												<Value Value="//input[@name=&apos;upload-cv&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//form/div[2]/p//input" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textareaYourMessage" Key="{2D3E1AA9-EF43-479E-9280-A5E53909EF3E}">
+										<Image FileName="-1377376743" Left="621" Top="667" Right="1219" Bottom="769" />
+										<TypeInfo Item0="{9F55C722-A2A8-4F2A-BDD8-F3F308B44958}" />
+										<Selectors>
+											<Selector>
+												<Value Value="xpath=//textarea[@id=(//label[.=&apos;LinkedIn Profile Link&apos;]/@for)]" />
+											</Selector>
+											<Selector>
+												<Value Value="xpath=//textarea[@aria-describedby=(//li[.=&apos;The field is required.&apos;]/@id)]" />
+											</Selector>
+											<Selector>
+												<Value Value="css=#cf-6" />
+											</Selector>
+											<Selector>
+												<Value Value="xpath=//form/p//textarea" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textboxEmail" Key="{5CCD2B44-00B6-4423-A5B7-6F750333EC7D}">
+										<Image FileName="278648264" Left="621" Top="307" Right="1219" Bottom="348" />
+										<TypeInfo Item0="{9F55C722-A2A8-4F2A-BDD8-F3F308B44958}" />
+										<Selectors>
+											<Selector>
+												<Value Value="xpath=//input[@id=(//label[.=&apos;Email*&apos;]/@for)]" />
+											</Selector>
+											<Selector>
+												<Value Value="xpath=//input[@aria-describedby=(//li[.=&apos;The field is required.&apos;]/@id)]" />
+											</Selector>
+											<Selector>
+												<Value Value="css=#cf-2" />
+											</Selector>
+											<Selector>
+												<Value Value="xpath=//input[@name=&apos;your-email&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="xpath=//form/p[3]//input" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelOneOrMoreFieldsHaveAn3" Key="{8173DD5B-F6B4-44D0-8AE6-A8007E95D500}">
+										<Image FileName="-613324492" Left="666" Top="529" Right="1192" Bottom="558" />
+										<TypeInfo Item0="{818777AD-1BAB-493B-80DE-C75395F9D1AA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[.=&apos;One or more fields have an error. Please check and try again.&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[contains(@class, &apos;wpcf7-response-output&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;wpcf7-f880-o1&apos;]//div/div/div" />
+											</Selector>
+											<Selector>
+												<Value Value="//form/div/div/div" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeTheFieldIsRequired3" Key="{CBE8115F-8804-4EB3-95C7-8C0D3C035376}">
+										<Image FileName="-1460575885" Left="629" Top="274" Right="1229" Bottom="288" />
+										<TypeInfo Item0="{818777AD-1BAB-493B-80DE-C75395F9D1AA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[text()=&apos;The field is required.&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//form/p[2]//span[contains(@class, &apos;wpcf7-not-valid-tip&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;wpcf7-f880-o1&apos;]//p[2]/span/span" />
+											</Selector>
+											<Selector>
+												<Value Value="//span/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeTheFieldIsRequired4" Key="{8611B71C-A549-4216-956F-F33D5BEAEAAD}">
+										<Image FileName="-1204384611" Left="629" Top="345" Right="1229" Bottom="359" />
+										<TypeInfo Item0="{818777AD-1BAB-493B-80DE-C75395F9D1AA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//form/p[3]//span[contains(@class, &apos;wpcf7-not-valid-tip&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;wpcf7-f880-o1&apos;]//p[3]/span/span" />
+											</Selector>
+											<Selector>
+												<Value Value="//p[3]/span/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeTheFieldIsRequired5" Key="{0518D044-A31C-4807-98AB-80B3D0480AAF}">
+										<Image FileName="1819637416" Left="629" Top="416" Right="1229" Bottom="430" />
+										<TypeInfo Item0="{818777AD-1BAB-493B-80DE-C75395F9D1AA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//form/p[4]//span[contains(@class, &apos;wpcf7-not-valid-tip&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;wpcf7-f880-o1&apos;]//p[4]/span/span" />
+											</Selector>
+											<Selector>
+												<Value Value="//p[4]/span/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeTheFieldIsRequired6" Key="{B6D3E219-4165-4AAD-A0F5-37E440CF08C1}">
+										<Image FileName="1819637416" Left="629" Top="768" Right="1229" Bottom="783" />
+										<TypeInfo Item0="{818777AD-1BAB-493B-80DE-C75395F9D1AA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//p[6]/span[contains(@class, &apos;wpcf7-form-control-wrap&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;wpcf7-f880-o1&apos;]//p[6]/span" />
+											</Selector>
+											<Selector>
+												<Value Value="//p[6]/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeTheEMailAddressEnteredIs2" Key="{F5AAD41D-B4B7-418B-B5AF-2CE91D90CA94}">
+										<Image FileName="846224261" Left="629" Top="346" Right="1229" Bottom="360" />
+										<TypeInfo Item0="{818777AD-1BAB-493B-80DE-C75395F9D1AA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[text()=&apos;The e-mail address entered is invalid.&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//form/p[3]//span[contains(@class, &apos;wpcf7-not-valid-tip&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;wpcf7-f880-o1&apos;]//p[3]/span/span" />
+											</Selector>
+											<Selector>
+												<Value Value="//span/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeTheTelephoneNumberIsInva" Key="{9CA60DCC-A199-4EE2-B9E9-E09F7036742D}">
+										<Image FileName="1998589583" Left="629" Top="417" Right="1229" Bottom="431" />
+										<TypeInfo Item0="{818777AD-1BAB-493B-80DE-C75395F9D1AA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[text()=&apos;The telephone number is invalid.&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//form/p[4]//span[contains(@class, &apos;wpcf7-not-valid-tip&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;wpcf7-f880-o1&apos;]//p[4]/span/span" />
+											</Selector>
+											<Selector>
+												<Value Value="//p[4]/span/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelOneOrMoreFieldsHaveAn4" Key="{7F300F37-4226-4A56-93B0-58FEBF32A882}">
+										<Image FileName="1629474803" Left="666" Top="530" Right="1192" Bottom="559" />
+										<TypeInfo Item0="{818777AD-1BAB-493B-80DE-C75395F9D1AA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[.=&apos;One or more fields have an error. Please check and try again.&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[contains(@class, &apos;wpcf7-response-output&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;wpcf7-f880-o1&apos;]//div/div/div" />
+											</Selector>
+											<Selector>
+												<Value Value="//form/div/div/div" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeTheEMailAddressEnteredIs3" Key="{82EF1180-3973-4D25-8B97-368DB759745B}">
+										<Image FileName="648387972" Left="629" Top="346" Right="1229" Bottom="360" />
+										<TypeInfo Item0="{818777AD-1BAB-493B-80DE-C75395F9D1AA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[text()=&apos;The e-mail address entered is invalid.&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//span[contains(@class, &apos;wpcf7-not-valid-tip&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;wpcf7-f880-o1&apos;]//span/span" />
+											</Selector>
+											<Selector>
+												<Value Value="//span/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeEmail" Key="{B06B6690-251A-401B-954B-E11FD91E5964}">
+										<Image FileName="139086927" Left="621" Top="288" Right="1221" Bottom="349" />
+										<TypeInfo Item0="{9F55C722-A2A8-4F2A-BDD8-F3F308B44958}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//p[contains(., &apos;Email&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+								</Children>
+							</Child>
+							<Child Name="dlgOpen" Key="{A3EC520A-66DD-4C13-8042-309AB4981568}">
+								<Image FileName="-1648306975" Left="0" Top="0" Right="960" Bottom="522" />
+								<Properties>
+									<Property Name="WndClass">
+										<Value Value="#32770" />
+									</Property>
+									<Property Name="WndCaption">
+										<Value Value="Open" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="DUIViewWndClassName" Key="{5EE9D677-5EE1-4F42-8C0D-329CF1FA2697}">
+										<Image FileName="454190743" Left="8" Top="73" Right="952" Bottom="438" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="DUIViewWndClassName" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="Explorer_Pane" Key="{52862E28-6B90-448C-A08E-B1491D220FBB}">
+												<Image FileName="454190743" Left="8" Top="73" Right="952" Bottom="438" />
+												<Properties>
+													<Property Name="FrameworkId">
+														<Value Value="DirectUI" />
+													</Property>
+													<Property Name="ClassName">
+														<Value Value="HWNDView" />
+													</Property>
+													<Property Name="LocalizedControlType">
+														<Value Value="pane" />
+													</Property>
+													<Property Name="ObjectIdentifier">
+														<Value Value="Explorer_Pane" />
+													</Property>
+													<Property Name="ObjectGroupIndex">
+														<Value Value="1" Type="0" />
+													</Property>
+												</Properties>
+												<Children>
+													<Child Name="CtrlNotifySink" Key="{693FAE9E-3D2A-4F2A-A05D-621DFAE819B6}">
+														<Image FileName="379547886" Left="8" Top="104" Right="164" Bottom="438" />
+														<Properties>
+															<Property Name="WndClass">
+																<Value Value="CtrlNotifySink" />
+															</Property>
+															<Property Name="WndCaption">
+																<Value Value="" />
+															</Property>
+															<Property Name="Index">
+																<Value Value="1" Type="0" />
+															</Property>
+														</Properties>
+														<Children>
+															<Child Name="NamespaceTreeControl" Key="{EBE34B28-0BC4-40D2-AF66-190314413D4A}" ExtendedFind="True">
+																<Image FileName="379547886" Left="8" Top="104" Right="164" Bottom="438" />
+																<Properties>
+																	<Property Name="WndClass">
+																		<Value Value="NamespaceTreeControl" />
+																	</Property>
+																	<Property Name="WndCaption">
+																		<Value Value="Namespace Tree Control" />
+																	</Property>
+																</Properties>
+																<Children>
+																	<Child Name="tvNamespaceTreeControl" Key="{6D33C68A-8131-4D5A-848B-6E7BC1392FFD}">
+																		<Image FileName="379547886" Left="8" Top="104" Right="164" Bottom="438" />
+																		<TypeInfo Item0="{41377175-65A3-4AB2-96C1-C3F660A28CF3}" />
+																		<Properties>
+																			<Property Name="WndClass">
+																				<Value Value="SysTreeView32" />
+																			</Property>
+																			<Property Name="WndCaption">
+																				<Value Value="Tree View" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																</Children>
+															</Child>
+														</Children>
+													</Child>
+													<Child Name="CtrlNotifySink2" Key="{8BA2E817-E25F-48F0-BF4E-DE4E981A20C3}">
+														<Image FileName="529229552" Left="168" Top="104" Right="952" Bottom="438" />
+														<Properties>
+															<Property Name="WndClass">
+																<Value Value="CtrlNotifySink" />
+															</Property>
+															<Property Name="WndCaption">
+																<Value Value="" />
+															</Property>
+															<Property Name="Index">
+																<Value Value="3" Type="0" />
+															</Property>
+														</Properties>
+														<Children>
+															<Child Name="ShellView" Key="{87A6F5FB-BD40-454A-9906-C77D5E482034}" ExtendedFind="True">
+																<Image FileName="529229552" Left="168" Top="104" Right="952" Bottom="438" />
+																<Properties>
+																	<Property Name="WndClass">
+																		<Value Value="SHELLDLL_DefView" />
+																	</Property>
+																	<Property Name="WndCaption">
+																		<Value Value="ShellView" />
+																	</Property>
+																</Properties>
+																<Children>
+																	<Child Name="Items_View" Key="{383B6C66-3F09-45FF-887D-AA0B7F1C1E94}">
+																		<Image FileName="529229552" Left="168" Top="104" Right="952" Bottom="438" />
+																		<Properties>
+																			<Property Name="FrameworkId">
+																				<Value Value="DirectUI" />
+																			</Property>
+																			<Property Name="ClassName">
+																				<Value Value="UIItemsView" />
+																			</Property>
+																			<Property Name="LocalizedControlType">
+																				<Value Value="list" />
+																			</Property>
+																			<Property Name="ObjectIdentifier">
+																				<Value Value="Items_View" />
+																			</Property>
+																			<Property Name="ObjectGroupIndex">
+																				<Value Value="1" Type="0" />
+																			</Property>
+																		</Properties>
+																		<Children>
+																			<Child Name="DDimitrov" Key="{F1290106-B7DC-406D-BC3B-1047AE2EFD6D}">
+																				<Image FileName="529229552" Left="182" Top="177" Right="780" Bottom="199" />
+																				<Properties>
+																					<Property Name="FrameworkId">
+																						<Value Value="DirectUI" />
+																					</Property>
+																					<Property Name="ClassName">
+																						<Value Value="UIItem" />
+																					</Property>
+																					<Property Name="LocalizedControlType">
+																						<Value Value="list item" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value Value="DDimitrov" />
+																					</Property>
+																				</Properties>
+																				<Children>
+																					<Child Name="Name" Key="{66239579-5C96-4CE6-A06F-6FEA0A6D5C2E}">
+																						<Image FileName="529229552" Left="204" Top="177" Right="440" Bottom="199" />
+																						<TypeInfo Item0="{E1C5F438-F6E0-48DF-94A6-AC603F98537F}" />
+																						<Properties>
+																							<Property Name="FrameworkId">
+																								<Value Value="DirectUI" />
+																							</Property>
+																							<Property Name="ClassName">
+																								<Value Value="UIProperty" />
+																							</Property>
+																							<Property Name="LocalizedControlType">
+																								<Value Value="edit" />
+																							</Property>
+																							<Property Name="ObjectIdentifier">
+																								<Value Value="Name" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																				</Children>
+																			</Child>
+																			<Child Name="TestAutomationMusalaSoftWebPage" Key="{D1BFFBCF-4275-4FD4-B8D6-DDBA415CE57E}">
+																				<Image FileName="527198636" Left="182" Top="177" Right="780" Bottom="199" />
+																				<Properties>
+																					<Property Name="FrameworkId">
+																						<Value Value="DirectUI" />
+																					</Property>
+																					<Property Name="ClassName">
+																						<Value Value="UIItem" />
+																					</Property>
+																					<Property Name="LocalizedControlType">
+																						<Value Value="list item" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value Value="TestAutomationMusalaSoftWebPage" />
+																					</Property>
+																				</Properties>
+																				<Children>
+																					<Child Name="Name" Key="{C938EE45-224D-48D0-8386-E635D746930B}">
+																						<Image FileName="527198636" Left="204" Top="177" Right="440" Bottom="199" />
+																						<TypeInfo Item0="{E1C5F438-F6E0-48DF-94A6-AC603F98537F}" />
+																						<Properties>
+																							<Property Name="FrameworkId">
+																								<Value Value="DirectUI" />
+																							</Property>
+																							<Property Name="ClassName">
+																								<Value Value="UIProperty" />
+																							</Property>
+																							<Property Name="LocalizedControlType">
+																								<Value Value="edit" />
+																							</Property>
+																							<Property Name="ObjectIdentifier">
+																								<Value Value="Name" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																				</Children>
+																			</Child>
+																		</Children>
+																	</Child>
+																</Children>
+															</Child>
+														</Children>
+													</Child>
+												</Children>
+											</Child>
+										</Children>
+									</Child>
+									<Child Name="WorkerW" Key="{693BAC10-F5D3-46BE-B035-F3C75ED33D78}">
+										<Image FileName="-1049638458" Left="8" Top="31" Right="952" Bottom="73" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="WorkerW" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="ReBarWindow32" Key="{578EC8BA-FEB5-4327-A882-8EAD22749E80}">
+												<Image FileName="-1049638458" Left="8" Top="31" Right="952" Bottom="73" />
+												<Properties>
+													<Property Name="WndClass">
+														<Value Value="ReBarWindow32" />
+													</Property>
+												</Properties>
+												<Children>
+													<Child Name="AddressBandRoot" Key="{7A1DC95A-CED1-4429-A6A1-11DF718261DF}">
+														<Image FileName="-1049638458" Left="113" Top="31" Right="727" Bottom="70" />
+														<Properties>
+															<Property Name="WndClass">
+																<Value Value="Address Band Root" />
+															</Property>
+														</Properties>
+														<Children>
+															<Child Name="progress" Key="{EADC6D6B-F0D7-416F-9894-BA8034D787DA}">
+																<Image FileName="-1049638458" Left="115" Top="36" Right="725" Bottom="66" />
+																<Properties>
+																	<Property Name="WndClass">
+																		<Value Value="msctls_progress32" />
+																	</Property>
+																</Properties>
+																<Children>
+																	<Child Name="BreadcrumbParent" Key="{F4546F41-FA18-486C-9425-F46D0BC92B6D}">
+																		<Image FileName="-1049638458" Left="115" Top="36" Right="659" Bottom="66" />
+																		<Properties>
+																			<Property Name="WndClass">
+																				<Value Value="Breadcrumb Parent" />
+																			</Property>
+																		</Properties>
+																		<Children>
+																			<Child Name="toolbar" Key="{6FCE36C3-5590-4AA8-8F62-660A06D2E96B}">
+																				<Image FileName="-1049638458" Left="115" Top="36" Right="659" Bottom="66" />
+																				<TypeInfo Item0="{98EF5D2A-08C8-4DE3-B526-AA7AFF31C65B}" />
+																				<Properties>
+																					<Property Name="WndClass">
+																						<Value Value="ToolbarWindow32" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																		</Children>
+																	</Child>
+																	<Child Name="comboBox" Key="{5DE13D1E-0D42-445C-B77D-42A3CC11FF60}">
+																		<Image FileName="1383641090" Left="115" Top="36" Right="692" Bottom="66" />
+																		<Properties>
+																			<Property Name="WndClass">
+																				<Value Value="ComboBoxEx32" />
+																			</Property>
+																		</Properties>
+																		<Children>
+																			<Child Name="ComboBox" Key="{46D608D2-C7F5-49A6-9CAC-1E9CC4A2E817}">
+																				<Image FileName="1383641090" Left="115" Top="36" Right="692" Bottom="66" />
+																				<Properties>
+																					<Property Name="WndClass">
+																						<Value Value="ComboBox" />
+																					</Property>
+																				</Properties>
+																				<Children>
+																					<Child Name="Edit" Key="{9A54C4A3-F5CC-4723-88D1-376C10CFEBED}">
+																						<Image FileName="1383641090" Left="139" Top="44" Right="659" Bottom="59" />
+																						<TypeInfo Item0="{CF0FBE03-A845-472E-9B73-E72DD9395456}" />
+																						<Properties>
+																							<Property Name="WndClass">
+																								<Value Value="Edit" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																				</Children>
+																			</Child>
+																		</Children>
+																	</Child>
+																</Children>
+															</Child>
+														</Children>
+													</Child>
+												</Children>
+											</Child>
+										</Children>
+									</Child>
+									<Child Name="cbxFileName" Key="{D51ABA59-C149-42D9-B354-2F34DE474D20}">
+										<Image FileName="-807687304" Left="197" Top="447" Right="735" Bottom="471" />
+										<TypeInfo Item0="{9DC8F9B1-2482-4AFE-88DE-8F087190887E}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="ComboBoxEx32" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="ComboBox" Key="{13A1DF3D-E73E-4D28-9E77-EF9BE0C4565A}">
+												<Image FileName="-807687304" Left="197" Top="447" Right="735" Bottom="471" />
+												<TypeInfo Item0="{9DC8F9B1-2482-4AFE-88DE-8F087190887E}" />
+												<Properties>
+													<Property Name="WndClass">
+														<Value Value="ComboBox" />
+													</Property>
+												</Properties>
+											</Child>
+										</Children>
+									</Child>
+									<Child Name="btnOpen" Key="{7C855698-CD93-45FD-88B9-AE3B8FE1B2CF}">
+										<Image FileName="880117227" Left="747" Top="476" Right="835" Bottom="502" />
+										<TypeInfo Item0="{173CEF80-BED2-4CD1-9E24-530F01DD1972}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="Button" />
+											</Property>
+											<Property Name="WndCaption">
+												<Value Value="&amp;Open" />
+											</Property>
+										</Properties>
+									</Child>
+								</Children>
+							</Child>
+						</Children>
+					</Child>
+				</Children>
+			</Child>
+		</Children>
+	</Nodes>
+	<LogicalNodes Name="Aliases" Owner="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}">
+		<Child Name="browser" Owner="{1B3C47DC-BC12-4638-A9FF-4039EBA34F45}">
+			<Child Name="pageMusalaSoft" Owner="{189E1979-1F21-4801-87F5-18FBFFE88B8D}">
+				<Child Name="formContactForm" Owner="{E19F810C-0538-44FF-9A98-F15ADF55B0A4}">
+					<Child Name="textnodeTheEMailAddressEnteredIs" Owner="{C5D9C890-C3DE-4EB3-9871-558F74055390}" />
+					<Child Name="panelOneOrMoreFieldsHaveAn" Owner="{0215F354-773F-42AE-8258-3F9832B8D7FF}" />
+					<Child Name="phoneinputMobile" Owner="{A1E081C0-ADC1-4E7D-8F95-F2B0B7ED5BC6}" />
+				</Child>
+				<Child Name="buttonContactUs" Owner="{5DF9AEBE-936B-47DC-8B56-C031E3A64A57}" />
+				<Child Name="sectionContacts" Owner="{3FB5E268-F9D8-48B0-B432-653B6F0ECC4C}">
+					<Child Name="linkContactUs" Owner="{69FE6A69-5F1C-4E31-A0E0-A26E4A17C5E5}" />
+				</Child>
+				<Child Name="textboxName" Owner="{65953A42-9078-49F2-9733-6EA5F032734B}" />
+				<Child Name="emailinputEmail" Owner="{D234F23B-A4E6-4961-B197-3B7791101139}" />
+				<Child Name="textboxSubject" Owner="{F7B09B05-4397-4DAA-9AC5-285DEBD9CC37}" />
+				<Child Name="textareaYourMessage" Owner="{754E6EFD-8600-47D9-9311-1B5980CD0BAE}" />
+				<Child Name="textboxEnterCode" Owner="{9EDA64D0-2350-4046-9195-683B35428A24}" />
+				<Child Name="submitbuttonSend" Owner="{1735C9D5-303C-47B5-9E3E-D4BF7F907A2E}" />
+				<Child Name="panelContactFormPop" Owner="{C3C4B8C0-12EB-42FD-ACEB-908EBB86F60C}" />
+				<Child Name="navCompany" Owner="{66BBA110-C81C-4F61-865C-47E993C12087}">
+					<Child Name="textnodeMenuMainNav1" Owner="{6181302C-B87E-4282-B2C8-5A23738F3D93}">
+						<Child Name="textnodeCompany" Owner="{69742C22-F886-4C6C-A018-B3F60346D524}">
+							<Child Name="linkCompany" Owner="{64E5371F-E33B-4260-8F97-6CBC8B6E44EE}" />
+						</Child>
+						<Child Name="textnodeCareers" Owner="{48C3AECE-99F4-4892-B658-197CC57C0FE6}">
+							<Child Name="linkCareers" Owner="{DE75B5AB-658B-4EF8-B71C-611207490AE9}" />
+						</Child>
+					</Child>
+				</Child>
+			</Child>
+			<Child Name="BrowserWindow" Owner="{B7128463-EB41-4DE1-8067-D01843E43BA3}" />
+			<Child Name="BrowserWindow2" Owner="{D9AB8ED3-1581-4458-B2AE-16A8F398806C}" />
+			<Child Name="pageWwwMusalaComCompany" Owner="{2A412929-F9AD-451C-8005-EDEFC08F4405}">
+				<Child Name="sectionLeadership" Owner="{80D6E460-4DD9-4C8B-A053-1FC5B7A2BB38}" />
+				<Child Name="footerContactUs" Owner="{86256CE3-30BF-482B-9889-5319DE7948E6}">
+					<Child Name="link_FB" Owner="{D28C3333-2B31-4B7C-9409-B2D5EB522B26}" />
+				</Child>
+				<Child Name="headerCompany" Owner="{34D2F7FA-A2EA-423E-BB00-DF1DFB6A3909}" />
+				<Child Name="sectionIn2000WeFoundedMusalaSoft" Owner="{AECABC97-8ADB-4932-B212-3A329C071E98}" />
+			</Child>
+			<Child Name="page1MusalaSoftFacebook" Owner="{F44F01BD-B8EF-488C-8E08-B4CA863D25AB}">
+				<Child Name="textnode" Owner="{B3C959CF-E683-4730-A9EC-3B08E24A2F94}" />
+				<Child Name="panel" Owner="{5F926AD6-DC12-4882-A014-2573FE15EEF9}" />
+			</Child>
+			<Child Name="pageWwwMusalaComCareers" Owner="{0C2B06B1-03DA-4050-BB8D-42616266A86F}">
+				<Child Name="headerCompany" Owner="{CA30BA56-1BED-4C74-8422-6EE9489D7C89}" />
+				<Child Name="sectionCheckOurOpenPositions" Owner="{F5777076-A990-49B6-8414-8E6BE4948057}">
+					<Child Name="buttonCheckOurOpenPositions" Owner="{30713315-1DCF-425D-BB07-7B4AF4F7CCB3}" />
+				</Child>
+			</Child>
+			<Child Name="pageWwwMusalaComCareersJoinUs" Owner="{8D5FAA28-F41D-42EC-976D-5475EDB712FE}">
+				<Child Name="headerCompany" Owner="{DCFE0398-A522-4FD5-9BD1-0C92D047A458}" />
+				<Child Name="sectionFilterByLocation" Owner="{411EFB3C-23C2-4AA8-A912-7B96F9757C64}">
+					<Child Name="selectGetLocation" Owner="{E5C769DB-B25D-4A38-8954-8C07D941ABEC}" />
+					<Child Name="articleSeniorJavaDeveloper" Owner="{0AEFEC82-2E22-4793-97B2-BF5EE1372993}">
+						<Child Name="linkSeniorJavaDeveloper" Owner="{17CA3A93-DCCE-443F-90E4-6DF2BD6442E5}">
+							<Child Name="imageSeniorJavaDeveloper" Owner="{41B3DC47-DFF5-4211-8A67-9C5640489C03}" />
+							<Child Name="panelSeniorJavaDeveloper" Owner="{E86DFC9C-F718-4970-82E5-B67BE848CFEA}" />
+						</Child>
+					</Child>
+					<Child Name="articleDevopsEngineer" Owner="{5D9C012D-43C2-45EE-B899-E868EF36E155}">
+						<Child Name="linkDevopsEngineer" Owner="{9C8C7DB7-C0BB-4242-8CA1-C0FE1817C154}">
+							<Child Name="panelDevopsEngineer" Owner="{A88C8FD3-9A6D-40D9-B8A0-4AE1271E3EB2}" />
+						</Child>
+					</Child>
+				</Child>
+				<Child Name="imageJoinUs" Owner="{F703A188-41E1-4453-9FB4-A53C93E63019}" />
+			</Child>
+			<Child Name="pageWwwMusalaComJobSeniorJavaDev" Owner="{4DA4E9F0-33B2-4EA4-9122-50205C1550FD}">
+				<Child Name="articleSeniorJavaDeveloper" Owner="{F905095E-2E87-4E03-AED3-1945A9E2EBEB}">
+					<Child Name="panelGeneralDescription" Owner="{F463426F-E05B-49EA-A414-6E69A153156C}" />
+					<Child Name="panelRequirements" Owner="{6A494931-8073-4980-887B-50F0E16C5789}" />
+					<Child Name="panelResponsibilities" Owner="{8E4FCAEB-A406-40FE-9E2B-34D54F973B23}" />
+					<Child Name="panelWhatWeOffer" Owner="{9BE77FD0-B7C9-4F65-B845-0D1DB5F5FC02}" />
+					<Child Name="link" Owner="{367AD7CB-7E8D-4D94-BD19-659780638CB2}">
+						<Child Name="buttonApply" Owner="{6E3D5D6D-2A56-4493-9693-2998554421E4}" />
+					</Child>
+				</Child>
+				<Child Name="formContactForm" Owner="{4844E5F6-8D70-4D58-A628-2ADC26E2190B}">
+					<Child Name="panelOneOrMoreFieldsHaveAn" Owner="{C290C351-C839-4B1B-B9EF-5B081CB03066}" />
+					<Child Name="panelOneOrMoreFieldsHaveAn2" Owner="{99B60716-6255-4A41-8ABD-F2BC7EE666E3}" />
+					<Child Name="textnodeYouAreNotAllowedToUpload" Owner="{453CB1D8-A3D8-46DB-9E3C-1ED2C5DCAA87}" />
+					<Child Name="textnodeTheFieldIsRequired" Owner="{892D3E69-0701-4C69-A611-F22F66C045F7}" />
+					<Child Name="textnodeTheFieldIsRequired2" Owner="{715A3A6D-DF36-4252-A77F-8E9CDB029129}" />
+					<Child Name="textnodeTheEMailAddressEnteredIs" Owner="{5F17C2A8-F67A-491F-A07C-5561EB4DD23F}" />
+					<Child Name="checkboxAdconsentchx" Owner="{C4882691-ECBF-4DC3-A28C-7289807DC2E5}" />
+					<Child Name="submitbuttonSend" Owner="{ED624BCD-CCFB-4BBA-8D45-00FAF3181B94}" />
+					<Child Name="buttonClose" Owner="{0B54C2D6-85CE-47DE-A6A6-9228124FDB66}" />
+					<Child Name="textboxName" Owner="{61648D47-ECF1-4DB0-B178-17BE35A3C6E1}" />
+					<Child Name="textboxMobile" Owner="{3521AAF8-F6DE-4018-ACDB-67158D59BA30}" />
+					<Child Name="fileUploadYourCv" Owner="{D24D053A-54BC-4B8A-8FE1-C0B611D148CB}" />
+					<Child Name="textareaYourMessage" Owner="{2D3E1AA9-EF43-479E-9280-A5E53909EF3E}" />
+					<Child Name="textboxEmail" Owner="{5CCD2B44-00B6-4423-A5B7-6F750333EC7D}" />
+					<Child Name="panelOneOrMoreFieldsHaveAn3" Owner="{8173DD5B-F6B4-44D0-8AE6-A8007E95D500}" />
+					<Child Name="textnodeTheFieldIsRequired3" Owner="{CBE8115F-8804-4EB3-95C7-8C0D3C035376}" />
+					<Child Name="textnodeTheFieldIsRequired4" Owner="{8611B71C-A549-4216-956F-F33D5BEAEAAD}" />
+					<Child Name="textnodeTheFieldIsRequired5" Owner="{0518D044-A31C-4807-98AB-80B3D0480AAF}" />
+					<Child Name="textnodeTheFieldIsRequired6" Owner="{B6D3E219-4165-4AAD-A0F5-37E440CF08C1}" />
+					<Child Name="textnodeTheEMailAddressEnteredIs2" Owner="{F5AAD41D-B4B7-418B-B5AF-2CE91D90CA94}" />
+					<Child Name="textnodeTheTelephoneNumberIsInva" Owner="{9CA60DCC-A199-4EE2-B9E9-E09F7036742D}" />
+					<Child Name="panelOneOrMoreFieldsHaveAn4" Owner="{7F300F37-4226-4A56-93B0-58FEBF32A882}" />
+					<Child Name="textnodeTheEMailAddressEnteredIs3" Owner="{82EF1180-3973-4D25-8B97-368DB759745B}" />
+					<Child Name="textnodeEmail" Owner="{B06B6690-251A-401B-954B-E11FD91E5964}" />
+				</Child>
+			</Child>
+			<Child Name="dlgOpen" Owner="{A3EC520A-66DD-4C13-8042-309AB4981568}">
+				<Child Name="DUIViewWndClassName" Owner="{5EE9D677-5EE1-4F42-8C0D-329CF1FA2697}">
+					<Child Name="Explorer_Pane" Owner="{52862E28-6B90-448C-A08E-B1491D220FBB}">
+						<Child Name="CtrlNotifySink" Owner="{693FAE9E-3D2A-4F2A-A05D-621DFAE819B6}">
+							<Child Name="NamespaceTreeControl" Owner="{EBE34B28-0BC4-40D2-AF66-190314413D4A}">
+								<Child Name="tvNamespaceTreeControl" Owner="{6D33C68A-8131-4D5A-848B-6E7BC1392FFD}" />
+							</Child>
+						</Child>
+						<Child Name="CtrlNotifySink2" Owner="{8BA2E817-E25F-48F0-BF4E-DE4E981A20C3}">
+							<Child Name="ShellView" Owner="{87A6F5FB-BD40-454A-9906-C77D5E482034}">
+								<Child Name="Items_View" Owner="{383B6C66-3F09-45FF-887D-AA0B7F1C1E94}">
+									<Child Name="DDimitrov" Owner="{F1290106-B7DC-406D-BC3B-1047AE2EFD6D}">
+										<Child Name="Name" Owner="{66239579-5C96-4CE6-A06F-6FEA0A6D5C2E}" />
+									</Child>
+									<Child Name="TestAutomationMusalaSoftWebPage" Owner="{D1BFFBCF-4275-4FD4-B8D6-DDBA415CE57E}">
+										<Child Name="Name" Owner="{C938EE45-224D-48D0-8386-E635D746930B}" />
+									</Child>
+								</Child>
+							</Child>
+						</Child>
+					</Child>
+				</Child>
+				<Child Name="WorkerW" Owner="{693BAC10-F5D3-46BE-B035-F3C75ED33D78}">
+					<Child Name="ReBarWindow32" Owner="{578EC8BA-FEB5-4327-A882-8EAD22749E80}">
+						<Child Name="AddressBandRoot" Owner="{7A1DC95A-CED1-4429-A6A1-11DF718261DF}">
+							<Child Name="progress" Owner="{EADC6D6B-F0D7-416F-9894-BA8034D787DA}">
+								<Child Name="BreadcrumbParent" Owner="{F4546F41-FA18-486C-9425-F46D0BC92B6D}">
+									<Child Name="toolbar" Owner="{6FCE36C3-5590-4AA8-8F62-660A06D2E96B}" />
+								</Child>
+								<Child Name="comboBox" Owner="{5DE13D1E-0D42-445C-B77D-42A3CC11FF60}">
+									<Child Name="ComboBox" Owner="{46D608D2-C7F5-49A6-9CAC-1E9CC4A2E817}">
+										<Child Name="Edit" Owner="{9A54C4A3-F5CC-4723-88D1-376C10CFEBED}" />
+									</Child>
+								</Child>
+							</Child>
+						</Child>
+					</Child>
+				</Child>
+				<Child Name="cbxFileName" Owner="{D51ABA59-C149-42D9-B354-2F34DE474D20}">
+					<Child Name="ComboBox" Owner="{13A1DF3D-E73E-4D28-9E77-EF9BE0C4565A}" />
+				</Child>
+				<Child Name="btnOpen" Owner="{7C855698-CD93-45FD-88B9-AE3B8FE1B2CF}" />
+			</Child>
+		</Child>
+	</LogicalNodes>
+</Root>

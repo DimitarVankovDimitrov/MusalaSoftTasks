@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{24B6FA0B-0143-461A-9758-AEB9E9A9428B}" version="15.0" key="{62599228-281A-4584-A338-24231E86FD02}">
+	<children>
+		<child name="TestAutomationMusalaSoftWebPage" key="{E7A47591-D289-458E-8EB0-1258848BFF44}" path="TestAutomationMusalaSoftWebPage\TestAutomationMusalaSoftWebPage.mds" />
+	</children>
+	<testItems key="{9B3BC67A-7049-4C66-A618-0DA1DB3DCFF0}">
+		<children>
+			<testItem key="{E7A47591-D289-458E-8EB0-1258848BFF44}" enabled="True" timeout="0" stopOnError="True" description="" />
+		</children>
+	</testItems>
+	<variables key="{A1175A89-AB91-4818-8E1C-DAFCB180ED66}" />
+	<analysis key="{C2F715B9-E9D0-4F19-ABAD-B06A40572615}" />
+	<scc key="{00000000-0000-0000-0000-000000000000}" name="">
+		<data />
+	</scc>
+</Root>
